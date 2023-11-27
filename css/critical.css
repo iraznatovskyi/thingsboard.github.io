@@ -1832,8 +1832,12 @@ section {
 }
 
 @media screen and (max-width: 450px) {
-  #home #overflow #manage #features-top .block img.arrow {
+  #home #overflow #manage #features-top .block img.arrow.first, #home #overflow #manage #features-top .block img.arrow.second {
     display: none;
+  }
+
+  #home #overflow #manage #features-top .block img.arrow.mobile-arrow {
+    position: unset;
   }
 }
 
