@@ -205,10 +205,6 @@
             {src: '/js/photoswipe-ui-default.min.js', type: 'script'}
         ];
 
-        if (window.location.pathname === '/') {
-            initialScriptsList.unshift({src: '/css/styles.css', type: 'css'});
-        }
-
         loadNextScript(0, initialScriptsList);
 
         jqueryDefer(function () {
@@ -484,7 +480,7 @@
 <header>
     <div class="logo-burger">
         <a href="/support-ukraine/" class="support-ukraine">
-            <p><i class="fa fa-ban" aria-hidden="true" aria-label="Burger menu"></i>Stop the war</p>
+            <p><i class="fa fa-ban"></i>Stop the war</p>
             <img src="/images/animated-ukraine-flag.gif" alt="Stand with Ukraine flag">
             <p>Support Ukraine</p>
         </a>
@@ -626,32 +622,32 @@
                             </a>
                         </div>
                         <div class="group">
-                            <a href="/docs/services/iot-solutions/">
+                            <a href="/iot-solutions/">
                                 <img src="/images/iot-solutions.svg" alt="IoT solutions icon">
                                 <div class="sub-text">
                                     <span class="item-heading">IoT Solutions</span>
                                     <p>Overview of IoT Solutions and Applications</p>
                                 </div>
                             </a>
-                            <a href="/docs/services/device-management/">
+                            <a href="/device-management/">
                                 <img src="/images/device-management.svg" alt="Device management icon">
                                 <div class="sub-text">
                                     <span class="item-heading">Device management</span>
                                     <p>Streamline Your IoT Device Operations</p>
                                 </div>
                             </a>
-                            <a href="/docs/services/energy-management/">
-                                <img src="/images/energy-management.svg" alt="Energy management icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Energy management</span>
-                                    <p>Smart Energy Solutions Explained</p>
-                                </div>
-                            </a>
-                            <a href="/docs/services/monitoring-dashboard/">
+                            <a href="/monitoring-dashboard/">
                                 <img src="/images/monitoring-dashboard.svg" alt="Monitoring dashboard icon">
                                 <div class="sub-text">
                                     <span class="item-heading">Monitoring dashboard</span>
                                     <p>Visualizing IoT Data on Live Dashboards</p>
+                                </div>
+                            </a>
+                            <a href="/asset-management">
+                                <img src="/images/asset-management.svg" alt="Asset management icon">
+                                <div class="sub-text">
+                                    <span class="item-heading">Asset Management</span>
+                                    <p>IoT Asset Tracking and inventory management</p>
                                 </div>
                             </a>
                         </div>
