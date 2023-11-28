@@ -153,7 +153,7 @@ The platform supports industry-standard encryption algorithms and device credent
 The Rule Engine enables forwarding incoming data to various analytics systems, such as Apache Spark or Hadoop, using Kafka or other Message buses.
 
 ## Learn more
-<div class="smart-farming-nav">
+<div class="usecases-bottom-nav">
     <a href="/docs/getting-started-guides/helloworld/" class="button">Getting started</a>
     <a href="/industries/smart-energy/" class="button">Customers feedback</a>
     <a href="/docs/#platform-features" class="button">Platform features</a>
