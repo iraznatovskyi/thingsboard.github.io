@@ -66,7 +66,7 @@ At first, lets create and configure "to email" node.
 Example of HTML page%,%loriot-account%,%templates/rule-nodes/to-email-node/html-page.md%br%
 Example of HTML with image%,%basic-credential%,%templates/rule-nodes/to-email-node/html-image.md{% endcapture %}
 
-{% include content-toggle.html content-toggle-id="bodyTemplateExamples" toggle-spec=bodyTemplateExamples %}
+{% include content-toggle.liquid content-toggle-id="bodyTemplateExamples" toggle-spec=bodyTemplateExamples %}
 
 #### Configuring generator
 At the second stage, let's configure the "generator" node:
@@ -80,7 +80,7 @@ At the second stage, let's configure the "generator" node:
 JS code for HTML page%,%html-page%,%templates/rule-nodes/to-email-node/generator-code-for-html.md%br%
 JS code for image%,%image%,%templates/rule-nodes/to-email-node/generator-code-for-image.md{% endcapture %}
 
-{% include content-toggle.html content-toggle-id="generatorCode" toggle-spec=generatorCode %}
+{% include content-toggle.liquid content-toggle-id="generatorCode" toggle-spec=generatorCode %}
 
 #### Send email and finishing
 Find and configure new **send email** node and connect all nodes between themselves, like on the screen shoot.

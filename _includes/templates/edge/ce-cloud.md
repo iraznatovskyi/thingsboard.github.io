@@ -1,3 +1,5 @@
+#### Last in the chain
+
 The Server UI can be accessed through the following URL: [Live Demo](https://demo.thingsboard.io/signup){:target="_blank"}.
 Please log in using your **Live Demo** tenant credentials. 
 Throughout this tutorial, we will refer to this URL as **SERVER_URL**.
@@ -5,3 +7,108 @@ Throughout this tutorial, we will refer to this URL as **SERVER_URL**.
 The ThingsBoard **Edge** UI is accessible at `http://localhost:8080`.
 You can log in using your **Live Demo** tenant credentials.
 This URL will be referred to as **EDGE_URL** in the subsequent sections of the tutorial.
+
+{% capture converterCode %}
+var data = decodeToJson(payload);
+var deviceName = data.deviceInfo.deviceName;
+var deviceType = data.deviceInfo.deviceProfileName;
+
+// If you want to parse incoming data somehow, you can add your code to this function.
+// input: bytes 
+// expected output: 
+//  {
+//    "attributes": {"attributeKey": "attributeValue"},
+//    "telemetry": {"telemetryKey": "telemetryValue"}
+//  }
+// default functionality - convert bytes to HEX string with telemetry key "HEX_bytes"
+
+function decodePayload(input) {
+    var output = { attributes:{}, telemetry: {} };
+    // --- Decoding code --- //
+    
+    output.telemetry.HEX_bytes = bytesToHex(input);
+    
+    // --- Decoding code --- //
+    return output;
+}
+
+// --- attributes and telemetry objects ---
+var telemetry = {};
+var attributes = {};
+// --- attributes and telemetry objects ---
+
+// --- Timestamp parsing
+var dateString = data.time.substring(0, data.time.lastIndexOf('+')-3) + "Z";
+var timestamp = new Date(dateString).getTime();
+// --- Timestamp parsing
+
+// You can add some keys manually to attributes or telemetry
+attributes.fPort = data.port;
+attributes.encodedData = data.data;
+
+// You can exclude some keys from the result
+var excludeFromAttributesList = ["deviceName", "rxInfo", "txInfo", "deduplicationId", "time", "dr", "fCnt", "fPort"];
+var excludeFromTelemetryList = ["data", "deviceInfo", "devAddr", "adr"];
+
+// Message parsing
+// To avoid paths in the decoded objects we passing false value to function as "pathInKey" argument.
+// Warning: pathInKey can cause already found fields to be overwritten with the last value found.
+
+var telemetryData = toFlatMap(data, excludeFromTelemetryList, false);
+var attributesData = toFlatMap(data, excludeFromAttributesList, false);
+
+var uplinkDataList = [];
+
+// Passing incoming bytes to decodePayload function, to get custom decoding
+var customDecoding = decodePayload(hexToBytes(data.data));
+
+// Collecting data to result
+if (customDecoding.?telemetry.size() > 0) {
+    telemetry.putAll(customDecoding.telemetry);
+}
+
+if (customDecoding.?attributes.size() > 0) {
+    attributes.putAll(customDecoding.attributes);
+}
+
+telemetry.putAll(telemetryData);
+attributes.putAll(attributesData);
+
+var deviceInfo = {
+    deviceName: deviceName,
+    deviceType: deviceType,
+    telemetry: {
+        ts: timestamp, 
+        values: telemetry
+    },
+    attributes: attributes
+};
+
+uplinkDataList.add(deviceInfo);
+
+if (data.cmd == "gw") {
+    foreach( gatewayInfo : data.gws ) {
+        var gatewayInfoMsg = {
+            deviceName: gatewayInfo.gweui,
+            deviceType: "LoraGateway",
+            attributes: {},
+            telemetry: {
+                "ts": gatewayInfo.ts,
+                "values": toFlatMap(gatewayInfo, ["ts", "time", "gweui"], false)
+            }
+        };
+        uplinkDataList.add(gatewayInfoMsg);
+    }
+}
+
+return uplinkDataList;
+{% endcapture %}
+
+{% include code-toggle.liquid code=converterCode params="javascript|.copy-code.expandable-20" %}
+
+
+#### Last in the chain SECOND
+
+The Server UI can be accessed through the following URL: [Live Demo](https://demo.thingsboard.io/signup){:target="_blank"}.
+Please log in using your **Live Demo** tenant credentials. 
+Throughout this tutorial, we will refer to this URL as **SERVER_URL**.

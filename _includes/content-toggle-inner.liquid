@@ -1,0 +1,137 @@
+{% assign contentToggleInnerId = include.toggle-id | append: 'Inner' %}
+{% assign togglerawInnerInner = include.toggle | split: '%br%' %}
+{% assign initialId = "" %}
+
+<div class="inner-content-toggle" id="{{contentToggleInnerId}}">
+    <div class="inner-panel inner-panel-default">
+        <div class="inner-panel-heading {{contentToggleInnerId}}">
+            {% for item in togglerawInnerInner %}
+                {% assign splittedItem = item | split: '%,%' %}
+                {% assign buttonText = splittedItem[0] %}
+                {% assign toggleName = splittedItem[1] %}
+                {% if forloop.first %}{% assign initialId = toggleName %}{% endif %}
+                <a class="inner-content-toggle-button {{toggleName}}" id="{{toggleName}}">
+                    <div class="inner-content-toggle-button-text">
+                        {{buttonText}}
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        {% for item in togglerawInnerInner %}
+            {% assign splittedItem = item | split: '%,%' %}
+            {% assign toggleName = splittedItem[1] %}
+            {% assign togglePath = splittedItem[2] %}
+            {% capture toggleText %}{% include {{togglePath}} %}{% endcapture %}
+            <div id="{{toggleName}}-block" class="inner-panel-collapse inner-collapse">
+                <div class="inner-panel-body">
+                    <table><tr><td>{{ toggleText | markdownify }}</td></tr></table>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+jqueryUiDefer(initContentToggle{{contentToggleInnerId}});
+let innerToggleBlocksIds = [];
+let innerToggleBlocksIdsToTocsIds{{contentToggleId}} = {};
+let observer;
+let isFirstTime = true;
+
+function initContentToggle{{contentToggleInnerId}}() {
+    $(function() {
+        if ($('.inner-panel-heading.{{contentToggleInnerId}}').length) {
+            $('.inner-content-toggle#{{contentToggleInnerId}} a.inner-content-toggle-button').each(function(){
+                let item = $(this);
+                innerToggleBlocksIds.push(item.attr('id'))
+                item.click(function(event) {
+                    event.preventDefault();
+                    var id = $(this).attr('id');
+                    switchContent(id);
+                })
+            });
+
+            if ($('#table-of-contents')) {
+                const parentHeadingId = $('#{{contentToggleInnerId}}').closest('.tb-liquid-content-toggle').prevAll(':header:first').attr('id');
+                const tocItem = $('#table-of-contents #markdown-toc-' + parentHeadingId);
+                const headersArray = $('.inner-panel-heading.{{contentToggleInnerId}}');
+                let i = 0;
+                for (let id of innerToggleBlocksIds) {
+                    innerToggleBlocksIdsToTocsIds{{contentToggleId}}[id] = [];
+                    let ulElement = $('<ul>', {id: id});
+                    $('#' + id + '-block').find(':header').each(function() {
+                        let headerElement = $(this);
+                        let liElement = $('<li>');
+                        let linkElement = $('<a>', {text: headerElement.text(), href: '#' + id + '-block', id: 'markdown-toc-' + id + i});
+                        liElement.append(linkElement);
+                        ulElement.append(liElement);
+                    });
+                    if ($(ulElement).length) {
+                        tocItem.append(ulElement);
+                    }
+                }
+            }
+            if (isFirstTime) { switchContent('{{initialId}}') }
+        } else {
+            setTimeout(function() {
+                initContentToggle{{contentToggleInnerId}}();
+            }, 50);
+        }
+    });
+}
+
+function checkIsMutated(contentId) {
+    if (observer) { observer.disconnect() }
+    const targetNode = $('.inner-content-toggle#{{contentToggleInnerId}}').closest('.panel-collapse')[0];
+
+    if (targetNode) {
+            observer = new MutationObserver((mutationsList, observer) => {
+            for (const mutation of mutationsList) {
+                if (mutation.attributeName === 'class' && mutation.target.classList.contains('show')) {
+                    $('ul#'+contentId).removeClass('hide');
+                    $('ul#'+contentId).addClass('show');
+                } else {
+                    for (let id of innerToggleBlocksIds) {
+                        $('ul#'+id).removeClass('show');
+                        $('ul#'+id).addClass('hide');
+                    }
+                }
+            }
+        });
+
+        const config = { attributes: true, childList: false, subtree: false };
+
+        observer.observe(targetNode, config);
+    }
+}
+
+function switchContent(contentId) {
+    isFirstTime = false;
+    for (let id of innerToggleBlocksIds) {
+        $('ul#'+id).removeClass('show');
+        $('ul#'+id).addClass('hide');
+    }
+
+    $('ul#'+contentId).removeClass('hide');
+    $('ul#'+contentId).addClass('show');
+
+    checkIsMutated(contentId);
+
+    $(".inner-content-toggle#{{contentToggleInnerId}} a.inner-content-toggle-button").each(function(){
+        let item = $(this);
+        item.removeClass('active')
+    });
+    $(".inner-content-toggle#{{contentToggleInnerId}} a.inner-content-toggle-button#" + contentId).addClass("active");
+
+    $(".inner-content-toggle#{{contentToggleInnerId}} .inner-panel-collapse").each(function(){
+        let item = $(this);
+        item.removeClass('show');
+        item.addClass("hide");
+    });
+    $(".inner-content-toggle#{{contentToggleInnerId}} .inner-panel-collapse#" + contentId + "-block").addClass("show").removeClass('hide');
+}
+
+</script>
+
+
+

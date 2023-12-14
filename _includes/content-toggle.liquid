@@ -1,6 +1,5 @@
 {% assign contentToggleId = include.content-toggle-id %}
 {% assign toggleraw = include.toggle-spec | split: '%br%' %}
-{% assign content = "" %}
 
 <div class="tb-liquid-content-toggle" id="{{contentToggleId}}">
     <div class="panel panel-default">
@@ -8,9 +7,8 @@
             {% for content in toggleraw %}
             {% assign thisContent = content | split: '%,%' %}
             {% assign buttonText=thisContent[0] | strip %}
-            {% assign toggleName=thisContent[1] %}
             {% if forloop.first == true %}{% assign firstTargetId=thisContent[1] %}{% endif %}
-            <a class="content-toggle-button" data-target="#{{toggleName}}">
+            <a class="content-toggle-button" data-target="#{{thisContent[1]}}">
                 <div class="content-toggle-button-text">
                     {{buttonText}}
                 </div>
@@ -18,15 +16,62 @@
             {% endfor %}
         </div>
         {% for content in toggleraw %}
-        {% assign thisContent = content | split: '%,%' %}
-        {% assign toggleName=thisContent[1] %}
-        {% assign togglePath=thisContent[2] %}
-        {% capture toggleText %}{% include {{togglePath}} %}{% endcapture %}
-        <div id="{{toggleName}}" class="panel-collapse collapse">
+        {% assign thisContentBlock = content | split: '%,%' %}
+        {% assign togglePath = thisContentBlock[2] | prepend: "/" | replace: '//', '/' %}
+        {% capture textWithScriptTags %}{% include {{togglePath}} %}{% endcapture %}
+        {% assign toggleText = textWithScriptTags | remove_first: '<script[^>]*>[\s\S]*?<\/script>' %}
+        {% if togglePath contains '/templates/' %}
+        <div id="{{thisContentBlock[1]}}" class="panel-collapse collapse">
             <div class="panel-body">
-                {{ toggleText | markdownify }}
+                {% capture noTocText %}
+                    {% include disable-toc.html content=toggleText %}
+                {% endcapture %}
+                <table><tr><td>{{ noTocText | markdownify }}</td></tr></table>
             </div>
         </div>
+        {% else %}
+            {% if toggleText contains '```' and toggleText contains 'expandable-' %}
+
+                {% assign matches = toggleText | strip | split: "```" %}
+                {% assign propsAfter = toggleText | split: ".copy-code" %}
+                {% assign prop = propsAfter[1] | split: "}" | first %}
+                {% assign finalContent = matches[0] %}
+
+                {% assign codeBlockLast = "" %}
+                {% for i in (1..matches.size) %}
+                    {% if matches[i].size and i == 1 or i == 3 or i == 5  %}
+                        {% assign codeBlock = matches[i] | strip | newline_to_br | split: '<br />' %}
+                        {% assign lang = codeBlock[0] %}
+                        {% assign codeBlockLast = codeBlock | slice: 1, codeBlock.size - 1 | join: '' %}
+                        {% capture codeBlockParsed %}
+                        {% assign params = lang | append: "|" | append: ".copy-code" | append: prop %}
+                        {% include code-toggle.liquid code=codeBlockLast params=params %}
+                        {% endcapture %}
+                        {% if codeBlockLast.size %}
+                            {% assign finalContent = finalContent | append: codeBlockParsed %}
+                        {% endif %}
+                    {% else %}
+                        {% if matches[i].size %}
+                            {% assign cleanedText = matches[i] | replace: '{:\s*\.copy-code\s*\.expandable-\d+\s*\}', '' %}
+                            {% assign finalContent = finalContent | append: cleanedText %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                <div id="{{thisContentBlock[1]}}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {% capture text %}{{finalContent}}{% endcapture %}
+                        {{ text | markdownify }}
+                    </div>
+                </div>
+            {% else %}
+                <div id="{{thisContentBlock[1]}}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {% capture text %}{{toggleText}}{% endcapture %}
+                        {{ text | markdownify }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
         {% endfor %}
     </div>
 </div>
@@ -36,7 +81,7 @@
     let toggleBlocksIdsToTocsIds{{contentToggleId}} = {};
     function initContentToggle{{contentToggleId}}() {
         $(function() {
-            if ($('#table-of-contents').find('#markdown-toc').length) {
+            if ($('.panel-heading.{{contentToggleId}}').length) {
                 let toggleBlocksIds = [];
                 $('.panel-heading.{{contentToggleId}} > a').each(function() {
                     toggleBlocksIds.push($(this).attr("data-target").substring(1));
@@ -103,3 +148,4 @@
     }
 
 </script>
+
