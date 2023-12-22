@@ -53,8 +53,15 @@
     <link href="/css/edge-products-critical.css" rel="stylesheet">
     {% elsif  page.url contains '/products/trendz/' %}
     <link href="/css/trendz-products-critical.css" rel="stylesheet">
-    {% elsif  page.url contains '/products/mobile' %}
-    <link href="/css/mobile-products-critical.css" rel="stylesheet">
+    {% elsif  page.url contains '/docs/services/' or  page.url contains '/iot-solutions/' or  page.url contains '/device-management/' or  page.url contains '/monitoring-dashboard/' or  page.url contains '/asset-management/' %}
+    <link href="/css/services-critical.css" rel="stylesheet">
+    {% elsif  page.url contains '/use-cases/' or  page.url contains '/smart-' or  page.url contains '/fleet-tracking/' %}
+    <link href="/css/use-cases-critical.css" rel="stylesheet">
+    {% elsif  page.url contains '/careers/' or  page.url contains '/mediakit/' %}
+    <link href="/css/careers-critical.css" rel="stylesheet">
+    {% elsif  page.url contains '/partners/' %}
+    <link href="/css/partners-critical.css" rel="stylesheet">
+    {% elsif  page.url contains '/company/' %}
     {% else %}
     <link href="/css/styles.css" rel="stylesheet">
     {% endif %}

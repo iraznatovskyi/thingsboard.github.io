@@ -1,0 +1,5396 @@
+@keyframes slideup-in {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 45px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeoutRight {
+    from {
+        opacity: 0;
+        transform: scale(80%);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+@keyframes fadeoutLeft {
+    from {
+        opacity: 0;
+        transform: scale(80%);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+@keyframes fadeoutCenter {
+    from {
+        opacity: 0;
+        transform: translateY(0%) scale(1.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-2%) scale(1);
+    }
+}
+
+@keyframes backgroundFadeout {
+    from {
+        opacity: 0;
+        transform: translateY(-11%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-11%);
+    }
+}
+
+@keyframes backgroundFadeoutMobile {
+    from {
+        opacity: 0;
+        transform: translate(-56%, -5%) scale(3.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-56%, -5%) scale(3.5);
+    }
+}
+
+@keyframes baseImageAppear {
+    from {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes secondaryImageAppear {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#development-services-reviews .development-services-reviews-content {
+    overflow: hidden;
+}
+
+#development-services-reviews footer {
+    position: relative;
+}
+
+#development-services-reviews .content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+#development-services-reviews .full-review {
+    display: flex;
+    justify-content: center;
+}
+
+#development-services-reviews #encyclopedia {
+    padding: 20px 0;
+    position: relative;
+    overflow: auto;
+}
+
+#development-services-reviews #encyclopedia #content {
+    position: inherit;
+}
+
+#development-services-reviews .back-link {
+    display: flex;
+    color: #727381;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.024px;
+    padding: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+#development-services-reviews .back-link:hover {
+    text-decoration: none;
+}
+
+#development-services-reviews .back-link .icon {
+    margin-right: 14px;
+    display: flex;
+}
+
+#development-services-reviews .header {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+#development-services-reviews .header .title {
+    color: #333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0.48px;
+}
+
+#development-services-reviews .side-title {
+    margin-top: 10px;
+    margin-right: 91px;
+    z-index: 2;
+}
+
+#development-services-reviews .side-title span {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 7px 0px;
+    color: #3622A4;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+#development-services-reviews #review-asg {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+#development-services-reviews #review-asg::before {
+    content: "";
+    border-radius: 1478px;
+    background: rgba(62, 103, 251, 0.16);
+    filter: blur(250px);
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#development-services-reviews #review-superbockgroup {
+    padding-top: 200px;
+    padding-bottom: 120px;
+}
+
+#development-services-reviews #review-kalitec {
+    padding: 120px 130px;
+    background: #F7F9FC;
+    z-index: 1;
+}
+
+#development-services-reviews #review-ionatech {
+    padding: 120px 130px;
+    background: #F7F9FC;
+    z-index: 1;
+}
+
+#development-services-reviews .get-in-touch {
+    position: relative;
+    display: flex;
+    background-color: white;
+    padding: 100px 130px 100px 130px;
+}
+
+#development-services-reviews .get-in-touch .content-get-in-touch {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#development-services-reviews .get-in-touch .section-title {
+    margin-right: 94px;
+}
+
+#development-services-reviews .get-in-touch .info {
+    margin-right: 70px;
+}
+
+#development-services-reviews .get-in-touch .side-title {
+    margin-top: 15px;
+    margin-right: 94px;
+}
+
+#development-services-reviews .get-in-touch .section-title {
+    max-width: 700px;
+    min-width: 700px;
+    line-height: 68px;
+    margin-right: 40px;
+    color: #333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 76px;
+    letter-spacing: 0.48px;
+    padding-bottom: 30px;
+}
+
+#development-services-reviews .get-in-touch .section-text {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.016px;
+    max-width: 470px;
+}
+
+#development-services-reviews .get-in-touch .contact-form {
+    padding-top: 30px;
+    z-index: 2;
+}
+
+#development-services-reviews .get-in-touch .contact-form .form-element {
+    margin-bottom: 28px;
+}
+
+#development-services-reviews .get-in-touch .contact-form .form-element label {
+    position: relative;
+    width: 100%;
+}
+
+#development-services-reviews .get-in-touch .contact-form .form-element label p {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    z-index: 2;
+    padding: 0px 5px;
+    background: white;
+}
+
+#development-services-reviews .get-in-touch .cdu-form-control {
+    width: 100%;
+    color: #898B8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 16px 18px;
+}
+
+#development-services-reviews .get-in-touch .cdu-button {
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    background-color: #3622A4;
+    width: 100%;
+}
+
+#development-services-reviews .review {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 290px;
+    z-index: 2;
+}
+
+#development-services-reviews .review .logo {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#development-services-reviews .review .logo>img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+}
+
+#development-services-reviews .review .review-header {
+    color: #2E2F3B;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.028px;
+    margin-bottom: 20px;
+}
+
+#development-services-reviews .review .review-body {
+    max-width: 900px;
+}
+
+#development-services-reviews .review .review-body h6,
+#development-services-reviews .review .review-body h5 {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.022px;
+}
+
+#development-services-reviews .review .review-body h6 {
+    margin-bottom: 22px;
+}
+
+#development-services-reviews .review .review-body h5 {
+    margin-bottom: 5px;
+}
+
+#development-services-reviews .bg-rectangle {
+    position: absolute;
+    width: 692px;
+    height: 659px;
+    transform: rotate(36.145deg);
+    flex-shrink: 0;
+    border-radius: 60px;
+    opacity: 0.3;
+    background: #E9EBFB;
+    z-index: 0;
+}
+
+#development-services-reviews #rectangle1 {
+    top: 4%;
+    left: 82%;
+}
+
+#development-services-reviews #rectangle2 {
+    top: 45%;
+    left: -10%;
+}
+
+#development-services-reviews #rectangle3 {
+    top: 20%;
+    left: 82%;
+}
+
+#development-services-reviews #rectangle4 {
+    top: 45%;
+    left: -10%;
+}
+
+@media screen and (max-width: 1919px) {
+    #development-services-reviews .review {
+        padding: 0 100px;
+    }
+
+    #development-services-reviews .header .title {
+        font-size: 36px;
+    }
+
+    #development-services-reviews .get-in-touch .info {
+        margin-right: 0px;
+    }
+
+    #development-services-reviews .get-in-touch .info .section-title {
+        min-width: 570px;
+    }
+
+    #development-services-reviews .get-in-touch .side-title span {
+        text-wrap: nowrap;
+        width: 210px;
+        height: 44px;
+    }
+
+    #development-services-reviews .get-in-touch .section-title {
+        min-width: 570px;
+        height: 136px;
+        line-height: 60px;
+    }
+
+    #development-services-reviews .get-in-touch .section-text {
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    #development-services-reviews .review {
+        padding: 0 100px;
+    }
+
+    #development-services-reviews .header .title {
+        font-size: 36px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch {
+        max-width: 1280px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "side-title contact-form" "info contact-form";
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .info {
+        grid-area: info;
+        margin-right: 0px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .info .section-title {
+        width: 609px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .side-title {
+        grid-area: side-title;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .side-title span {
+        text-wrap: nowrap;
+        width: 210px;
+        height: 44px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .section-title {
+        width: 610px;
+        height: 136px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .contact-form {
+        grid-area: contact-form;
+    }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 999px) {
+    #development-services-reviews #review-kalitec {
+        padding: 120px 20px;
+    }
+
+    #development-services-reviews #review-ionatech {
+        padding: 120px 20px;
+    }
+
+    #development-services-reviews .review {
+        padding: 0 20px;
+    }
+
+    #development-services-reviews .get-in-touch {
+        padding: 150px 50px 200px 50px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch {
+        max-width: 1000px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "side-title contact-form" "info contact-form";
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .info {
+        grid-area: info;
+        margin-right: 0px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .info .section-title {
+        height: auto;
+        line-height: 40px;
+        min-width: 341px;
+        margin: 0px;
+        font-size: 30px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .info .section-text {
+        max-width: 327px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .side-title {
+        grid-area: side-title;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .side-title span {
+        text-wrap: nowrap;
+        width: 210px;
+        height: 44px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .contact-form {
+        grid-area: contact-form;
+        padding-right: 30px;
+    }
+
+    #development-services-reviews .get-in-touch .info {
+        grid-area: info;
+        margin-right: 0px;
+    }
+
+    #development-services-reviews .get-in-touch .info .section-title {
+        width: 341px;
+        height: auto;
+        line-height: 40px;
+    }
+
+    #development-services-reviews .get-in-touch .info .section-text {
+        max-width: 327px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #development-services-reviews .back-link {
+        margin-bottom: 10px;
+    }
+
+    #development-services-reviews .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services-reviews .header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    #development-services-reviews .header .title {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    #development-services-reviews .review {
+        padding: 0;
+        max-width: 750px;
+    }
+
+    #development-services-reviews .review .review-header {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    #development-services-reviews .review .review-body h6,
+    #development-services-reviews .review .review-body h5 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #development-services-reviews .review .review-body h6 {
+        margin-bottom: 8px;
+    }
+
+    #development-services-reviews .review .review-body h5 {
+        margin-bottom: 3px;
+    }
+
+    #development-services-reviews .get-in-touch {
+        padding: 50px 40px 80px 40px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch {
+        flex-direction: column;
+        padding: 0px;
+        max-width: 750px;
+        display: flex;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch .section-title {
+        height: fit-content;
+    }
+
+    #development-services-reviews .get-in-touch .info {
+        margin-right: 70px;
+    }
+
+    #development-services-reviews .get-in-touch .side-title {
+        margin-top: 15px;
+        margin-right: 94px;
+    }
+
+    #development-services-reviews .get-in-touch .section-title {
+        font-size: 25px;
+        line-height: 30px;
+        min-width: 300px;
+        margin-right: 94px;
+        height: fit-content;
+        max-width: fit-content;
+    }
+
+    #development-services-reviews .get-in-touch .section-text {
+        font-size: 16px;
+        line-height: 28px;
+        max-width: fit-content;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form {
+        padding-top: 30px;
+        max-width: 400px;
+        z-index: 2;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form .form-element {
+        margin-bottom: 28px;
+        width: 100%;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form .form-element label {
+        position: relative;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form .form-element label p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #development-services-reviews #review-asg {
+        padding: 40px 40px;
+    }
+
+    #development-services-reviews #review-superbockgroup {
+        padding: 40px 40px;
+    }
+
+    #development-services-reviews #review-kalitec {
+        padding: 40px 40px;
+        z-index: 1;
+    }
+
+    #development-services-reviews #review-ionatech {
+        padding: 40px 40px;
+    }
+
+    #development-services-reviews .side-title {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    #development-services-reviews .back-link {
+        margin-bottom: 10px;
+    }
+
+    #development-services-reviews .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services-reviews .header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    #development-services-reviews .header .title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #development-services-reviews .review {
+        padding: 0;
+    }
+
+    #development-services-reviews .review .review-header {
+        font-size: 20px;
+    }
+
+    #development-services-reviews .review .review-body h6,
+    #development-services-reviews .review .review-body h5 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #development-services-reviews .review .review-body h6 {
+        margin-bottom: 8px;
+    }
+
+    #development-services-reviews .review .review-body h5 {
+        margin-bottom: 3px;
+    }
+
+    #development-services-reviews .get-in-touch {
+        padding: 50px 20px 80px 20px;
+    }
+
+    #development-services-reviews .get-in-touch .content-get-in-touch {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #development-services-reviews .get-in-touch .info {
+        margin-right: 70px;
+    }
+
+    #development-services-reviews .get-in-touch .info .section-title {
+        min-width: 300px;
+    }
+
+    #development-services-reviews .get-in-touch .side-title {
+        margin-top: 15px;
+        margin-right: 94px;
+    }
+
+    #development-services-reviews .get-in-touch .section-title {
+        margin-right: 94px;
+        font-size: 25px;
+        line-height: 30px;
+        height: fit-content;
+        width: fit-content;
+        max-width: fit-content;
+    }
+
+    #development-services-reviews .get-in-touch .section-text {
+        font-size: 16px;
+        line-height: 28px;
+        max-width: fit-content;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form {
+        padding-top: 30px;
+        z-index: 2;
+        max-width: fit-content;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form .form-element {
+        margin-bottom: 28px;
+        width: 100%;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form .form-element label {
+        position: relative;
+    }
+
+    #development-services-reviews .get-in-touch .contact-form .form-element label p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #development-services-reviews #review-asg {
+        padding: 50px 20px 40px 20px;
+    }
+
+    #development-services-reviews #review-superbockgroup {
+        padding: 40px 20px;
+    }
+
+    #development-services-reviews #review-kalitec {
+        padding: 40px 20px;
+        z-index: 1;
+    }
+
+    #development-services-reviews #review-ionatech {
+        padding: 40px 20px;
+    }
+
+    #development-services-reviews .side-title {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+#development-services .noToc {
+    position: relative;
+    overflow: hidden;
+}
+
+#development-services .noToc .content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#development-services .noToc .content-wrapper>* {
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    z-index: 3;
+}
+
+#development-services .noToc #content-mvp {
+    z-index: 2;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(21, 29, 111, 0.08);
+    backdrop-filter: blur(25px);
+}
+
+#development-services .noToc #content-market-solution {
+    z-index: 1;
+    background-color: white;
+}
+
+#development-services .noToc #content-get-in-touch {
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
+    padding: 0 130px;
+    max-width: 1920px;
+}
+
+#development-services #hero {
+    padding-top: 80px;
+}
+
+#development-services .hero {
+    padding-top: 80px;
+}
+
+#development-services #first-screen {
+    height: 100vh;
+    min-height: 750px;
+    width: 100%;
+    background-color: #F8F9FD;
+    overflow: hidden;
+}
+
+#development-services #first-screen::before {
+    background: url("/images/development-services/graph-line.svg") no-repeat center/contain;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-11%);
+    opacity: 0;
+    animation-name: backgroundFadeout;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.4, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+
+#development-services #first-screen .hero-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 20px;
+}
+
+#development-services #first-screen .hero-container::before {
+    background: rgba(62, 103, 251, 0.3);
+    filter: blur(250px);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    margin: 18% 25%;
+}
+
+#development-services #first-screen .hero-container #hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: initial;
+    z-index: 1;
+    padding-top: 60px;
+    animation-name: slideup-in;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+#development-services #first-screen .hero-container #hero-content .cdu-title {
+    color: #313251;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: -0.84px;
+}
+
+#development-services #first-screen .hero-container #hero-content .cdu-sub-title {
+    color: #4F5662;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.036px;
+    width: 40%;
+}
+
+#development-services #first-screen .hero-container .hero-image {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 1880px;
+}
+
+#development-services #first-screen .hero-container .hero-image .image-wrapper-icon-laptop {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+#development-services #first-screen .hero-container .hero-image .image-wrapper-icon-laptop .schedule {
+    display: none;
+}
+
+#development-services #first-screen .hero-container .hero-image .image-wrapper-icon-phone {
+    position: absolute;
+    top: 18%;
+    left: 11%;
+    z-index: 2;
+}
+
+#development-services #first-screen .hero-container .hero-image #icon-laptop {
+    position: relative;
+    top: 0%;
+    left: -50%;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-2%);
+    animation-name: fadeoutCenter;
+    animation-duration: 750ms;
+    animation-timing-function: cubic-bezier(0.07, 0.43, 0.17, 0.81);
+    animation-fill-mode: forwards;
+}
+
+#development-services #first-screen .hero-container .hero-image #icon-phone {
+    opacity: 0;
+    animation-name: fadeoutLeft;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(0.07, 0.43, 0, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+#development-services #first-screen .hero-container .hero-image .schedule-block {
+    position: absolute;
+    top: 17%;
+    right: 13%;
+    background-color: white;
+    width: 344px;
+    height: 401px;
+    box-shadow: 0px 0px 10px 0px rgba(16, 14, 111, 0.1);
+    border-radius: 20px;
+    opacity: 0;
+    animation-name: fadeoutRight;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+    padding: 60px 24px 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+#development-services #first-screen .hero-container .hero-image .schedule-block #progress {
+    position: absolute;
+}
+
+#development-services #first-screen .hero-container .hero-image .schedule-block .result-number {
+    color: #1E1B39;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Inter;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 75px;
+}
+
+#development-services #first-screen .hero-container .hero-image .schedule-block .result-text {
+    color: #1E1B39;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 54px;
+}
+
+#development-services #first-screen .hero-container .hero-image .schedule-block .button {
+    border-radius: 6px;
+    background: #2A7DEC;
+    width: 100%;
+    height: 60px;
+}
+
+#development-services section {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#development-services .absolute-image {
+    position: absolute;
+}
+
+#development-services .our-customers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(21, 29, 111, 0.08);
+    backdrop-filter: blur(25px);
+}
+
+#development-services .our-customers .title {
+    color: #3D3E40;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    padding: 44px 0 39px 0;
+}
+
+#development-services .our-customers .customer-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+#development-services .our-customers .customer-logos .logo {
+    display: flex;
+}
+
+#development-services .our-customers .customer-logos .logo>img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+}
+
+#development-services .cdu-services {
+    padding: 140px 0 0px 0;
+    background-color: white;
+}
+
+#development-services .cdu-services .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    padding: 0 120px;
+    opacity: 0;
+    transform: translate3d(0, 45px, 0);
+}
+
+#development-services .cdu-services .header-animation {
+    animation-name: slideup-in;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+#development-services .cdu-services .header-animation .side-title {
+    margin-right: 100px;
+    min-width: 202px;
+    margin-top: 14px;
+}
+
+#development-services .cdu-services .header-animation .section-title {
+    max-width: 700px;
+    min-width: 700px;
+    line-height: 68px;
+    margin-right: 40px;
+}
+
+#development-services .cdu-services .header-animation .section-text {
+    margin-top: 12px;
+}
+
+#development-services .cdu-services .poc {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 120px;
+    z-index: 1;
+}
+
+#development-services .cdu-services .poc #solution-poc {
+    object-fit: contain;
+    width: 100%;
+    max-width: fit-content;
+}
+
+#development-services .cdu-services .poc #solution-widget-1 {
+    object-fit: contain;
+    width: 38%;
+    max-width: fit-content;
+    top: 26%;
+    left: 74%;
+}
+
+#development-services .cdu-services .poc #solution-widget-2 {
+    object-fit: contain;
+    width: 29%;
+    max-width: fit-content;
+    top: 72%;
+    left: 49%;
+}
+
+#development-services .cdu-services .poc .right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 410px;
+}
+
+#development-services .cdu-services .left-block {
+    position: relative;
+}
+
+#development-services .cdu-services .rigth-block {
+    position: relative;
+}
+
+#development-services .cdu-services .mvp {
+    position: relative;
+    padding: 80px 202px 80px 137px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+#development-services .cdu-services .mvp .left-block {
+    max-width: 620px;
+}
+
+#development-services .cdu-services .mvp #solution-widget-3 {
+    top: 42%;
+    left: 61%;
+}
+
+#development-services .cdu-services .market-solution {
+    position: relative;
+    padding: 120px 130px 200px 130px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: white;
+}
+
+#development-services .cdu-services .market-solution .left-block {
+    padding-left: 230px;
+    z-index: 1;
+}
+
+#development-services .cdu-services .market-solution .left-block #solution-market-solution1 {
+    width: 768px;
+}
+
+#development-services .cdu-services .market-solution .left-block #solution-market-solution2 {
+    top: 32%;
+    left: 7%;
+    width: 768px;
+}
+
+#development-services .cdu-services .market-solution .right-block {
+    padding-top: 76px;
+    max-width: 520px;
+}
+
+#development-services .cdu-services .additionally {
+    position: relative;
+    padding: 100px 130px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+#development-services .cdu-services .additionally .side-title {
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+#development-services .cdu-services .additionally .info {
+    display: flex;
+    z-index: 1;
+}
+
+#development-services .cdu-services .additionally .info .left-block {
+    max-width: 1000px;
+}
+
+#development-services .cdu-services .additionally .info .left-block .section-title {
+    line-height: 68px;
+}
+
+#development-services .cdu-services .additionally .info .right-block {
+    padding: 62px 0 0 200px;
+}
+
+#development-services .cdu-services .additionally .info .right-block button {
+    border-radius: 6px;
+    border: 1px solid #3622A4;
+    background: #F7F9FC;
+    color: #3622A4;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.03px;
+    padding: 10px 70px;
+}
+
+#development-services .cdu-services .additionally #additionally-bg1 {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    top: -100%;
+    left: -50%;
+    opacity: 0.6;
+    background: radial-gradient(#949ef2 0%, transparent 60%);
+}
+
+#development-services .cdu-services .additionally #additionally-bg2 {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    top: -180%;
+    left: 50%;
+    opacity: 0.6;
+    background: radial-gradient(#949ef2 0%, transparent 60%);
+}
+
+#development-services .testimonials {
+    position: relative;
+    background: white;
+    padding: 180px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+#development-services .testimonials #carousel-wrapper {
+    max-width: 1200px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel {
+    margin: 64px 0 24px;
+    position: relative;
+    visibility: hidden;
+    display: block;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel.owl-loaded {
+    visibility: visible;
+    min-height: unset;
+    max-height: unset;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel.owl-loaded .owl-stage-outer .owl-stage .owl-item {
+    transition: unset;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel.support-ukraine img {
+    max-height: 600px;
+    width: auto;
+    margin: auto;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-stage-outer {
+    overflow: visible;
+    position: relative;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-stage-outer .owl-stage .owl-item {
+    opacity: 0;
+    transition: none;
+    filter: blur(8px);
+    transition-duration: 0.5s;
+    transform: scale(0.9);
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-stage-outer .owl-stage .owl-item .item-image {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.04), 0px 50px 50px -20px rgba(0, 0, 0, 0.15);
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-stage-outer .owl-stage .owl-item.active {
+    opacity: 1;
+    filter: blur(0);
+    transition-duration: 0.5s;
+    transform: scale(1);
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-prev,
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-next {
+    position: absolute;
+    outline: none;
+    background-image: url(/images/development-services/slider-forward.svg);
+    background-color: transparent;
+    width: 26px;
+    height: 40px;
+    top: calc(50% - 25px);
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-prev:hover,
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-next:hover {
+    filter: invert(81%) sepia(95%) saturate(6705%) hue-rotate(252deg) brightness(99%) contrast(87%) opacity(0.5) grayscale(1);
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-prev span,
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-next span {
+    display: none;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-prev {
+    left: 0;
+    transform: scale(-1, 1);
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-nav.disabled+.owl-dots {
+    margin-top: 32px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-dots {
+    margin-top: 32px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-dots button.owl-dot {
+    outline: none;
+    margin: 0 12px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-dots button.owl-dot:hover,
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-dots button.owl-dot.active {
+    filter: invert(62%) sepia(74%) saturate(6770%) hue-rotate(202deg) brightness(99%) contrast(87%);
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-dots button.owl-dot span {
+    margin: 8px 0;
+    width: 10px;
+    height: 10px;
+    background: #E0E1E2;
+    border-radius: 4px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    z-index: 2;
+    padding: 0 30px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .logo {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .logo>img {
+    max-width: fit-content;
+    object-fit: contain;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-header {
+    color: #2E2F3B;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.028px;
+    margin-bottom: 20px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body {
+    width: fit-content;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h6,
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h5 {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.022px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h6 {
+    margin-bottom: 22px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h5 {
+    margin-bottom: 5px;
+}
+
+#development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .full-review-link {
+    color: #3622A4;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.022px;
+    margin-top: 45px;
+}
+
+#development-services .testimonials .upper-block {
+    display: flex;
+    padding: 0 130px;
+}
+
+#development-services .testimonials .upper-block .side-title {
+    margin-top: 15px;
+    margin-right: 94px;
+}
+
+#development-services .testimonials .upper-block .section-title {
+    line-height: 68px;
+}
+
+#development-services .get-in-touch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 50px 0 100px 0;
+}
+
+#development-services .get-in-touch .section-title {
+    margin-right: 94px;
+}
+
+#development-services .get-in-touch .info {
+    margin-right: 70px;
+    z-index: 2;
+}
+
+#development-services .get-in-touch .side-title {
+    margin-top: 15px;
+    margin-right: 94px;
+    max-width: 200px;
+}
+
+#development-services .get-in-touch .section-title {
+    max-width: 610px;
+    line-height: 68px;
+}
+
+#development-services .get-in-touch .section-text {
+    max-width: 470px;
+}
+
+#development-services .get-in-touch .contact-form {
+    padding-top: 30px;
+    z-index: 2;
+}
+
+#development-services .get-in-touch .contact-form .form-element {
+    margin-bottom: 28px;
+}
+
+#development-services .get-in-touch .contact-form .form-element label {
+    position: relative;
+    width: 100%;
+}
+
+#development-services .get-in-touch .contact-form .form-element label p {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    z-index: 2;
+    padding: 0px 5px;
+    background: white;
+}
+
+#development-services .get-in-touch .cdu-form-control {
+    width: 100%;
+    color: #898B8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 16px 18px;
+}
+
+#development-services .get-in-touch .cdu-button {
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    background-color: #2A7DEC;
+    width: 100%;
+}
+
+#development-services .side-title {
+    z-index: 2;
+}
+
+#development-services .side-title span {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 6px;
+    padding: 7px 0px;
+    color: #3622A4;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    width: max-content;
+}
+
+#development-services .section-title {
+    color: #333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 76px;
+    letter-spacing: 0.48px;
+    padding-bottom: 30px;
+}
+
+#development-services .section-text {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.016px;
+}
+
+#development-services .section-list li {
+    list-style-type: disc;
+    margin-left: 30px;
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.022px;
+    padding-bottom: 24px;
+    opacity: 0;
+}
+
+#development-services .section-list-animation li {
+    animation-name: slideup-in;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.4, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+#development-services .section-list-animation li:nth-child(2) {
+    animation-delay: calc(500ms + calc(1 * 200ms));
+}
+
+#development-services .section-list-animation li:nth-child(3) {
+    animation-delay: calc(500ms + calc(2 * 200ms));
+}
+
+#development-services .section-list-animation li:nth-child(4) {
+    animation-delay: calc(500ms + calc(3 * 200ms));
+}
+
+#development-services .section-list-animation li:nth-child(5) {
+    animation-delay: calc(500ms + calc(4 * 200ms));
+}
+
+#development-services .section-list-animation li:nth-child(6) {
+    animation-delay: calc(500ms + calc(5 * 200ms));
+}
+
+#development-services .section-list-animation li:nth-child(7) {
+    animation-delay: calc(500ms + calc(6 * 200ms));
+}
+
+#development-services .section-list-animation li:nth-child(8) {
+    animation-delay: calc(500ms + calc(7 * 200ms));
+}
+
+#development-services .section-list-animation li:nth-child(9) {
+    animation-delay: calc(500ms + calc(8 * 200ms));
+}
+
+#development-services .base-image {
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+#development-services .base-image-animation {
+    animation-name: baseImageAppear;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+#development-services .secondary-image {
+    opacity: 0;
+    transform: scale(0);
+}
+
+#development-services .secondary-image-animation {
+    animation-name: secondaryImageAppear;
+    animation-duration: 750ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+#development-services .secondary-image-animation:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+#development-services .number {
+    position: absolute;
+}
+
+#development-services .bg-rectangle {
+    position: absolute;
+    width: 692px;
+    height: 659px;
+    transform: rotate(36.145deg);
+    flex-shrink: 0;
+    border-radius: 60px;
+    opacity: 0.3;
+    background: #E9EBFB;
+    z-index: 0;
+}
+
+#development-services button:hover {
+    filter: brightness(1.3) contrast(0.9);
+}
+
+#development-services #rectangle1 {
+    top: 20%;
+    left: 82%;
+}
+
+#development-services #rectangle2 {
+    top: 80%;
+    left: 82%;
+}
+
+#development-services #rectangle3 {
+    top: 90%;
+    left: -10%;
+}
+
+#development-services #number-one {
+    top: 35%;
+    left: 62%;
+}
+
+#development-services #number-two {
+    top: 12%;
+    left: 33%;
+}
+
+#development-services #number-three {
+    top: 45%;
+    left: 54%;
+}
+
+#development-services .header {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #434343;
+}
+
+#development-services .text {
+    font-size: 16px;
+    color: #666666;
+}
+
+#development-services .accent-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5555FF;
+    text-transform: uppercase;
+}
+
+#development-services footer {
+    position: relative;
+}
+
+#development-services .flyout-button {
+    display: none;
+}
+
+@media screen and (max-width: 1919px) {
+    #development-services .noToc .content-wrapper>* {
+        max-width: 1440px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        padding: 0 50px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        max-width: 1440px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image {
+        width: 1440px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .image-wrapper-icon-phone {
+        top: 21%;
+        left: 5%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-laptop {
+        width: 1000px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-phone {
+        width: 400px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block {
+        top: 21%;
+        right: 8%;
+    }
+
+    #development-services .cdu-services {
+        padding: 100px 0 0px 0;
+    }
+
+    #development-services .cdu-services .header {
+        padding: 0 40px;
+    }
+
+    #development-services .cdu-services .header-animation .side-title {
+        margin-right: 50px;
+        min-width: 198px;
+        margin-top: 10px;
+    }
+
+    #development-services .cdu-services .header-animation .side-title span {
+        padding: 12px 0px;
+    }
+
+    #development-services .cdu-services .header-animation .section-title {
+        max-width: 528px;
+        min-width: 528px;
+        font-size: 36px;
+    }
+
+    #development-services .cdu-services .poc {
+        padding: 110px 40px;
+    }
+
+    #development-services .cdu-services .poc #solution-poc {
+        width: 800px;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-1 {
+        width: 331px;
+        top: 26%;
+        left: 62%;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-2 {
+        width: 257px;
+        max-width: fit-content;
+        top: 78%;
+        left: 41%;
+    }
+
+    #development-services .cdu-services .mvp {
+        padding: 100px 120px 109px 50px;
+    }
+
+    #development-services .cdu-services .mvp #solution-mvp1 {
+        width: 720px;
+    }
+
+    #development-services .cdu-services .mvp #solution-widget-3 {
+        top: 42%;
+        left: 58%;
+        width: 562px;
+    }
+
+    #development-services .cdu-services .market-solution {
+        padding: 100px 102px 285px 50px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block {
+        padding-left: 80px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution1 {
+        width: 700px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution2 {
+        top: 32%;
+        left: 0%;
+        width: 700px;
+    }
+
+    #development-services .cdu-services .market-solution .right-block {
+        padding-top: 80px;
+        max-width: 460px;
+    }
+
+    #development-services .cdu-services .additionally {
+        padding: 100px 50px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block button {
+        min-width: 290px;
+        height: 60px;
+        padding: 0px;
+    }
+
+    #development-services .testimonials {
+        padding: 130px 0 30px 0px;
+    }
+
+    #development-services .testimonials .upper-block {
+        padding: 0 50px;
+    }
+
+    #development-services .testimonials .review-slider .reviews {
+        margin: 0px 100px;
+    }
+
+    #development-services .testimonials .review-slider .reviews .review .review-header {
+        font-size: 28px;
+    }
+
+    #development-services .testimonials .review-slider .reviews .review .review-body h6,
+    #development-services .testimonials .review-slider .reviews .review .review-body h5 {
+        font-size: 18px;
+    }
+
+    #development-services .get-in-touch .info {
+        margin-right: 0px;
+    }
+
+    #development-services .get-in-touch .info .section-title {
+        width: 609px;
+    }
+
+    #development-services .get-in-touch .side-title span {
+        text-wrap: nowrap;
+        width: 210px;
+        height: 44px;
+    }
+
+    #development-services .get-in-touch .section-title {
+        width: 610px;
+        height: 136px;
+    }
+
+    #development-services #number-one {
+        top: 20%;
+        left: 62%;
+    }
+
+    #development-services #number-three {
+        top: 50%;
+        left: 50%;
+    }
+
+    #development-services .section-title {
+        font-size: 36px;
+        line-height: 63px;
+        letter-spacing: 0.3px;
+    }
+
+    #development-services .section-list li {
+        font-size: 18px;
+    }
+
+    #development-services #rectangle3 {
+        top: 92%;
+        left: -28%;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    #development-services .noToc .content-wrapper>* {
+        max-width: 1280px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        padding: 0 50px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        max-width: 1280px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "side-title contact-form" "info contact-form";
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-title {
+        font-size: 56px;
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-sub-title {
+        font-size: 24px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image {
+        width: 1440px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .image-wrapper-icon-phone {
+        top: 21%;
+        left: 6%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-laptop {
+        width: 1000px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-phone {
+        width: 400px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block {
+        top: 21%;
+        right: 8%;
+    }
+
+    #development-services .cdu-services {
+        padding: 100px 0 0px 0;
+    }
+
+    #development-services .cdu-services .header {
+        padding: 0 55px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "side-title section-text" "section-title section-text";
+        align-items: start;
+    }
+
+    #development-services .cdu-services .header .side-title {
+        margin-right: 50px;
+        min-width: 198px;
+        margin-top: 10px;
+        grid-area: side-title;
+    }
+
+    #development-services .cdu-services .header .side-title span {
+        padding: 6px 0px;
+    }
+
+    #development-services .cdu-services .header .section-title {
+        grid-area: section-title;
+        max-width: 528px;
+        min-width: 528px;
+        font-size: 36px;
+    }
+
+    #development-services .cdu-services .header .section-text {
+        grid-area: section-text;
+    }
+
+    #development-services .cdu-services .poc {
+        padding: 110px 40px;
+    }
+
+    #development-services .cdu-services .poc #solution-poc {
+        width: 700px;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-1 {
+        width: 331px;
+        top: 35%;
+        left: 65%;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-2 {
+        width: 257px;
+        max-width: fit-content;
+        top: 80%;
+        left: 37%;
+    }
+
+    #development-services .cdu-services .mvp {
+        padding: 100px 50px 109px 50px;
+    }
+
+    #development-services .cdu-services .mvp #solution-mvp1 {
+        width: 660px;
+    }
+
+    #development-services .cdu-services .mvp #solution-widget-3 {
+        top: 43%;
+        left: 53%;
+        width: 562px;
+    }
+
+    #development-services .cdu-services .market-solution {
+        padding: 100px 65px 285px 50px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block {
+        padding-left: 50px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution1 {
+        width: 600px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution2 {
+        top: 32%;
+        left: 0%;
+        width: 600px;
+    }
+
+    #development-services .cdu-services .market-solution .right-block {
+        padding-top: 80px;
+        max-width: 460px;
+    }
+
+    #development-services .cdu-services .additionally {
+        padding: 100px 50px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block button {
+        min-width: 290px;
+        height: 60px;
+        padding: 0px;
+    }
+
+    #development-services .testimonials {
+        padding: 130px 0 30px 0px;
+    }
+
+    #development-services .testimonials .upper-block {
+        padding: 0 50px;
+    }
+
+    #development-services .testimonials .review-slider .reviews {
+        margin: 0px 100px;
+    }
+
+    #development-services .testimonials .review-slider .reviews .review .review-header {
+        font-size: 28px;
+    }
+
+    #development-services .testimonials .review-slider .reviews .review .review-body h6,
+    #development-services .testimonials .review-slider .reviews .review .review-body h5 {
+        font-size: 18px;
+    }
+
+    #development-services .get-in-touch {
+        padding-top: 0;
+    }
+
+    #development-services .get-in-touch .info {
+        grid-area: info;
+        margin-right: 0px;
+    }
+
+    #development-services .get-in-touch .info .section-title {
+        width: 609px;
+    }
+
+    #development-services .get-in-touch .side-title {
+        grid-area: side-title;
+    }
+
+    #development-services .get-in-touch .side-title span {
+        text-wrap: nowrap;
+        width: 210px;
+        height: 44px;
+    }
+
+    #development-services .get-in-touch .section-title {
+        width: 610px;
+        height: 136px;
+    }
+
+    #development-services .get-in-touch .contact-form {
+        grid-area: contact-form;
+    }
+
+    #development-services #number-one {
+        top: 15%;
+        left: 60%;
+    }
+
+    #development-services #number-three {
+        top: 44%;
+        left: 48%;
+    }
+
+    #development-services .section-title {
+        font-size: 36px;
+        line-height: 63px;
+        letter-spacing: 0.3px;
+    }
+
+    #development-services .section-list li {
+        font-size: 18px;
+    }
+
+    #development-services #rectangle3 {
+        top: 92%;
+        left: -28%;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    #development-services .noToc .content-wrapper>* {
+        max-width: 1000px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        padding: 0 50px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        max-width: 1000px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "side-title contact-form" "info contact-form";
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-title {
+        font-size: 56px;
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-sub-title {
+        font-size: 24px;
+        min-width: 622px;
+        margin-top: 10px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .image-wrapper-icon-phone {
+        top: 23%;
+        left: 16%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-laptop {
+        width: 800px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-phone {
+        width: 300px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block {
+        width: 284px;
+        height: 347px;
+        top: 22%;
+        right: 20%;
+        padding-top: 40px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block #progress {
+        width: 243px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block .result-number {
+        font-size: 44px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block .result-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #development-services .our-customers .customer-logos {
+        justify-content: space-around;
+        padding-bottom: 50px;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+
+    #development-services .our-customers .customer-logos .logo {
+        display: flex;
+        padding: 10px;
+    }
+
+    #development-services .cdu-services {
+        padding: 100px 0 0px 0;
+    }
+
+    #development-services .cdu-services .header {
+        padding: 0 55px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "side-title section-text" "section-title section-text";
+        align-items: center;
+    }
+
+    #development-services .cdu-services .header .section-title {
+        grid-area: section-title;
+        max-width: 420px;
+        min-width: 420px;
+        font-size: 30px;
+    }
+
+    #development-services .cdu-services .header .section-text {
+        grid-area: section-text;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    #development-services .cdu-services .poc {
+        padding: 110px 40px;
+    }
+
+    #development-services .cdu-services .poc .right-block {
+        max-width: 260px;
+        max-height: 228px;
+        margin-top: 50px;
+    }
+
+    #development-services .cdu-services .poc #solution-poc {
+        width: 600px;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-1 {
+        width: 240px;
+        top: 35%;
+        left: 65%;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-2 {
+        width: 200px;
+        max-width: fit-content;
+        top: 80%;
+        left: 37%;
+    }
+
+    #development-services .cdu-services .mvp {
+        padding: 100px 35px 109px 40px;
+    }
+
+    #development-services .cdu-services .mvp #solution-mvp1 {
+        width: 600px;
+    }
+
+    #development-services .cdu-services .mvp #solution-widget-3 {
+        top: 46%;
+        left: 53%;
+        width: 446px;
+    }
+
+    #development-services .cdu-services .market-solution {
+        padding: 100px 40px 285px 40px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block {
+        padding-left: 30px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution1 {
+        width: 500px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution2 {
+        top: 50%;
+        left: 0%;
+        width: 500px;
+    }
+
+    #development-services .cdu-services .market-solution .right-block {
+        padding-top: 80px;
+        max-width: 352px;
+        max-height: 288px;
+    }
+
+    #development-services .cdu-services .additionally {
+        padding: 100px 50px;
+    }
+
+    #development-services .cdu-services .additionally .info .left-block {
+        max-width: 600px;
+    }
+
+    #development-services .cdu-services .additionally .info .left-block .section-title {
+        line-height: 40px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block {
+        padding: 65px 0 0 70px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block button {
+        min-width: 224px;
+        height: 52px;
+        padding: 0px;
+    }
+
+    #development-services .testimonials {
+        padding: 130px 0 30px 0px;
+    }
+
+    #development-services .testimonials .upper-block {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #development-services .testimonials #carousel-wrapper {
+        max-width: 1000px;
+        padding: 0 50px;
+    }
+
+    #development-services .testimonials .review-slider .reviews {
+        margin: 0px 100px;
+    }
+
+    #development-services .testimonials .review-slider .reviews .review {
+        max-width: 800px;
+    }
+
+    #development-services .testimonials .review-slider .reviews .review .review-header {
+        font-size: 28px;
+    }
+
+    #development-services .testimonials .review-slider .reviews .review .review-body h6,
+    #development-services .testimonials .review-slider .reviews .review .review-body h5 {
+        font-size: 18px;
+    }
+
+    #development-services .get-in-touch {
+        padding: 0px 0 200px 0;
+    }
+
+    #development-services .get-in-touch .info {
+        grid-area: info;
+        margin-right: 0px;
+    }
+
+    #development-services .get-in-touch .side-title {
+        grid-area: side-title;
+    }
+
+    #development-services .get-in-touch .side-title span {
+        text-wrap: nowrap;
+        width: 210px;
+        height: 44px;
+    }
+
+    #development-services .get-in-touch .section-title {
+        max-width: 341px;
+        height: auto;
+        line-height: 40px;
+    }
+
+    #development-services .get-in-touch .section-text {
+        max-width: 327px;
+    }
+
+    #development-services .get-in-touch .contact-form {
+        grid-area: contact-form;
+        padding-right: 30px;
+    }
+
+    #development-services #number-one {
+        top: 15%;
+        left: 81%;
+    }
+
+    #development-services #number-two {
+        top: 17%;
+        left: 20%;
+    }
+
+    #development-services #number-three {
+        top: 50%;
+        left: 50%;
+    }
+
+    #development-services .section-title {
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 0.3px;
+        padding-bottom: 10px;
+    }
+
+    #development-services .section-text {
+        margin-top: 10px;
+    }
+
+    #development-services .section-list li {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    #development-services #rectangle3 {
+        top: 92%;
+        left: -28%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #development-services .noToc .content-wrapper>* {
+        max-width: 761px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        padding: 0 50px;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        max-width: 761px;
+        display: flex;
+    }
+
+    #development-services #first-screen::before {
+        transform: translate(-56%, -5%) scale(3.5);
+        animation-name: backgroundFadeoutMobile;
+    }
+
+    #development-services #first-screen .hero-container .hero-image {
+        width: 671px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-laptop {
+        width: unset;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block {
+        width: 212px;
+        height: 243px;
+        top: 28%;
+        right: 3%;
+        padding: 32px 20px 32px 20px;
+        animation-delay: 500ms;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block #progress {
+        width: 78%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block .result-number {
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 32px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block .result-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 17px;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block .button {
+        height: fit-content;
+        font-weight: 400;
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-title {
+        font-size: 40px;
+        line-height: 76px;
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-sub-title {
+        font-size: 20px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .image-wrapper-icon-laptop {
+        position: absolute;
+        top: 8%;
+        left: 50%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .image-wrapper-icon-laptop .schedule {
+        display: none;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-phone {
+        display: none;
+    }
+
+    #development-services .cdu-services {
+        padding: 60px 0 0px 0;
+    }
+
+    #development-services .cdu-services .header {
+        flex-direction: column;
+        padding: 0 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #development-services .cdu-services .poc {
+        padding: 20px;
+        padding-bottom: 180px;
+        flex-direction: column-reverse;
+    }
+
+    #development-services .cdu-services .poc #solution-poc {
+        width: 100%;
+        max-width: unset;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-1 {
+        max-width: unset;
+        width: 46%;
+        top: 47%;
+        left: 56%;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-2 {
+        max-width: unset;
+        width: 38%;
+        top: 72%;
+        left: 22%;
+    }
+
+    #development-services .cdu-services .mvp {
+        padding: 40px 20px 80px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #development-services .cdu-services .mvp .right-block {
+        position: relative;
+        width: 100%;
+    }
+
+    #development-services .cdu-services .mvp .right-block #solution-mvp1 {
+        width: 100%;
+    }
+
+    #development-services .cdu-services .mvp .right-block #solution-widget-3 {
+        width: 70%;
+        top: 43%;
+        left: 35%;
+    }
+
+    #development-services .cdu-services .market-solution {
+        padding: 60px 20px 260px 20px;
+        flex-direction: column-reverse;
+    }
+
+    #development-services .cdu-services .market-solution .left-block {
+        padding-left: 0px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution1 {
+        width: 90%;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution2 {
+        width: 90%;
+        top: 60%;
+        left: 7%;
+    }
+
+    #development-services .cdu-services .market-solution .right-block {
+        padding-top: 0px;
+    }
+
+    #development-services .cdu-services .market-solution .right-block .section-title {
+        padding-bottom: 0px;
+    }
+
+    #development-services .cdu-services .additionally {
+        padding: 40px 20px;
+    }
+
+    #development-services .cdu-services .additionally .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services .cdu-services .additionally .info {
+        flex-direction: column;
+    }
+
+    #development-services .cdu-services .additionally .info .left-block {
+        max-width: 1000px;
+    }
+
+    #development-services .cdu-services .additionally .info .left-block .section-title {
+        line-height: 40px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block {
+        padding: 30px 0 0 0px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block button {
+        padding: 5px 50px;
+    }
+
+    #development-services .cdu-services .header-animation .section-title {
+        min-width: unset;
+        line-height: 48px;
+        font-size: 30px;
+    }
+
+    #development-services .get-in-touch {
+        padding: 40px 0;
+    }
+
+    #development-services .get-in-touch .section-title {
+        margin-right: 0;
+        line-height: 30px;
+        height: unset;
+        max-width: fit-content;
+    }
+
+    #development-services .get-in-touch .side-title span {
+        text-wrap: nowrap;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #development-services .get-in-touch .contact-form {
+        max-width: 400px;
+    }
+
+    #development-services .noToc {
+        position: relative;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #development-services .our-customers .title {
+        font-size: 14px;
+        line-height: 32px;
+        padding: 44px 0 39px 0;
+    }
+
+    #development-services .our-customers .customer-logos .logo {
+        padding: 20px;
+    }
+
+    #development-services .testimonials {
+        padding: 80px 0 30px 0;
+    }
+
+    #development-services .testimonials .upper-block {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #development-services .testimonials .upper-block .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services .testimonials .upper-block .section-title {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #development-services .testimonials #carousel-wrapper {
+        max-width: 870px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel {
+        margin: 20px 0 15px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-stage-outer .owl-stage .owl-item {
+        padding: 0 45px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-header {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h6,
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .full-review-link {
+        font-size: 16px;
+    }
+
+    #development-services .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services .side-title span {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 8px 0px;
+    }
+
+    #development-services .section-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        padding-bottom: 0px;
+    }
+
+    #development-services .section-text {
+        font-size: 14px;
+        line-height: 28px;
+        padding-bottom: 10px;
+    }
+
+    #development-services .section-list li {
+        font-size: 14px;
+        line-height: 32px;
+        padding-bottom: 10px;
+    }
+
+    #development-services #rectangle1 {
+        top: 20%;
+        left: 82%;
+    }
+
+    #development-services #rectangle2 {
+        top: 80%;
+        left: 82%;
+    }
+
+    #development-services #rectangle3 {
+        top: 90%;
+        left: -10%;
+    }
+
+    #development-services #number-one {
+        top: -5%;
+        left: 70%;
+        transform: scale(0.55);
+    }
+
+    #development-services #number-two {
+        top: -5%;
+        left: 65%;
+        transform: scale(0.55);
+    }
+
+    #development-services #number-three {
+        top: -1%;
+        left: 61%;
+        transform: scale(0.55);
+    }
+
+    #development-services .header {
+        margin: 0 0 20px;
+        font-size: 20px;
+    }
+
+    #development-services .text {
+        font-size: 16px;
+    }
+
+    #development-services .accent-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    #development-services .noToc #content-get-in-touch {
+        display: flex;
+    }
+
+    #development-services #first-screen::before {
+        transform: translate(-56%, -5%) scale(3.5);
+        animation-name: backgroundFadeoutMobile;
+    }
+
+    #development-services #first-screen .hero-container .hero-image {
+        width: 100%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-laptop {
+        width: unset;
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    #development-services #first-screen .hero-container #hero-content .cdu-sub-title {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+        min-width: unset;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .image-wrapper-icon-laptop {
+        position: absolute;
+        top: 8%;
+        left: 50%;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .image-wrapper-icon-laptop .schedule {
+        display: block;
+        border-radius: 6px;
+        background: #3622A4;
+        height: 60px;
+        padding: 0 60px;
+        transform: translateX(-50%);
+    }
+
+    #development-services #first-screen .hero-container .hero-image #icon-phone {
+        display: none;
+    }
+
+    #development-services #first-screen .hero-container .hero-image .schedule-block {
+        display: none;
+    }
+
+    #development-services .cdu-services {
+        padding: 60px 0 0px 0;
+    }
+
+    #development-services .cdu-services .header {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #development-services .cdu-services .poc {
+        padding: 20px;
+        padding-bottom: 100px;
+        flex-direction: column-reverse;
+    }
+
+    #development-services .cdu-services .poc #solution-poc {
+        width: 100%;
+        max-width: unset;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-1 {
+        max-width: unset;
+        width: 46%;
+        top: 47%;
+        left: 56%;
+    }
+
+    #development-services .cdu-services .poc #solution-widget-2 {
+        max-width: unset;
+        width: 38%;
+        top: 72%;
+        left: 22%;
+    }
+
+    #development-services .cdu-services .mvp {
+        padding: 40px 20px 80px 20px;
+        flex-direction: column;
+    }
+
+    #development-services .cdu-services .mvp .right-block {
+        position: relative;
+        width: 100%;
+    }
+
+    #development-services .cdu-services .mvp .right-block #solution-mvp1 {
+        width: 100%;
+    }
+
+    #development-services .cdu-services .mvp .right-block #solution-widget-3 {
+        width: 70%;
+        top: 43%;
+        left: 35%;
+    }
+
+    #development-services .cdu-services .market-solution {
+        padding: 60px 20px 215px 20px;
+        flex-direction: column-reverse;
+    }
+
+    #development-services .cdu-services .market-solution .left-block {
+        padding-left: 0px;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution1 {
+        width: 90%;
+    }
+
+    #development-services .cdu-services .market-solution .left-block #solution-market-solution2 {
+        width: 90%;
+        top: 60%;
+        left: 7%;
+    }
+
+    #development-services .cdu-services .market-solution .right-block {
+        padding-top: 0px;
+    }
+
+    #development-services .cdu-services .market-solution .right-block .section-title {
+        padding-bottom: 0px;
+    }
+
+    #development-services .cdu-services .additionally {
+        padding: 40px 20px;
+    }
+
+    #development-services .cdu-services .additionally .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services .cdu-services .additionally .info {
+        flex-direction: column;
+    }
+
+    #development-services .cdu-services .additionally .info .left-block {
+        max-width: 1000px;
+    }
+
+    #development-services .cdu-services .additionally .info .left-block .section-title {
+        line-height: 30px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block {
+        padding: 30px 0 0 0px;
+    }
+
+    #development-services .cdu-services .additionally .info .right-block button {
+        padding: 5px 50px;
+    }
+
+    #development-services .cdu-services .additionally #additionally-bg1 {
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -90%;
+    }
+
+    #development-services .cdu-services .header-animation .section-title {
+        min-width: unset;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    #development-services .get-in-touch {
+        padding: 40px 0;
+    }
+
+    #development-services .get-in-touch .section-title {
+        margin-right: 0;
+        line-height: 30px;
+        height: unset;
+    }
+
+    #development-services .get-in-touch .side-title span {
+        text-wrap: nowrap;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #development-services .noToc {
+        position: relative;
+    }
+
+    #development-services .noToc #content-get-in-touch {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #development-services .our-customers .title {
+        font-size: 14px;
+        line-height: 32px;
+        padding: 44px 0 39px 0;
+    }
+
+    #development-services .our-customers .customer-logos .logo {
+        padding: 20px;
+    }
+
+    #development-services .testimonials {
+        padding: 80px 0 30px 0;
+    }
+
+    #development-services .testimonials .upper-block {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #development-services .testimonials .upper-block .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services .testimonials .upper-block .section-title {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #development-services .testimonials #carousel-wrapper {
+        padding: 0;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel {
+        margin: 20px 0 15px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .owl-stage-outer .owl-stage .owl-item {
+        padding: 0 45px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review {
+        padding: 0;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-header {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h6,
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .review-body h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #development-services .testimonials .owl-carousel.owl-theme.reviews-carousel .review .full-review-link {
+        font-size: 16px;
+    }
+
+    #development-services .side-title {
+        margin-bottom: 10px;
+    }
+
+    #development-services .side-title span {
+        font-size: 18px;
+    }
+
+    #development-services .section-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        padding-bottom: 0px;
+    }
+
+    #development-services .section-text {
+        font-size: 14px;
+        line-height: 28px;
+        padding-bottom: 10px;
+    }
+
+    #development-services .section-list li {
+        font-size: 14px;
+        line-height: 32px;
+        padding-bottom: 10px;
+    }
+
+    #development-services #rectangle1 {
+        top: 20%;
+        left: 82%;
+    }
+
+    #development-services #rectangle2 {
+        top: 80%;
+        left: 82%;
+    }
+
+    #development-services #rectangle3 {
+        top: 90%;
+        left: -10%;
+    }
+
+    #development-services #number-one {
+        top: -11%;
+        left: 70%;
+        transform: scale(0.35);
+    }
+
+    #development-services #number-two {
+        top: -13%;
+        left: 55%;
+        transform: scale(0.35);
+    }
+
+    #development-services #number-three {
+        top: 12%;
+        left: 54%;
+        transform: scale(0.35);
+    }
+
+    #development-services .header {
+        margin: 0 0 20px;
+        font-size: 20px;
+    }
+
+    #development-services .text {
+        font-size: 16px;
+    }
+
+    #development-services .accent-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+
+/* ========================================  PRICING  ============================================== */
+
+@media (max-width: 992px) {
+    #pricingContent .container {
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+#edge .edge-features #pricing-models-cards {
+    padding-left: 0px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#edge .edge-features #pricing-models-cards main {
+    opacity: 0;
+    background: #45818e;
+    color: #fff;
+    margin: 10px 10px 10px 0px;
+    padding: 8px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+#edge .edge-features #pricing-models-cards main.animated {
+    opacity: 1;
+}
+
+#edge .edge-features #pricing-models-cards main .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#edge .edge-features #pricing-models-cards main .content .content-title {
+    margin-bottom: 0.75rem;
+}
+
+#edge .edge-features #pricing-models-cards main .content h4 {
+    color: #eee;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 1.2rem;
+}
+
+#edge .edge-features #pricing-models-cards main .content p+p {
+    margin-top: 10px;
+}
+
+#edge .edge-features #pricing-models-cards main .content .content-block {
+    padding: 1.25rem;
+}
+
+#edge .edge-features #pricing-models-cards main .content .content-block.py-0x {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#edge .edge-features #pricing-models-cards main .content .content-block.pb-0x {
+    padding-bottom: 0;
+}
+
+#edge .edge-features #pricing-models-cards main .content .content-block .marketplace {
+    display: flex;
+}
+
+#edge .edge-features #pricing-models-cards main .content .content-block .marketplace .pricing-image-wrapper {
+    flex: 1;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#edge .edge-features #pricing-models-cards main .content .pricing-image-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+
+#edge .edge-features #pricing-models-cards main .content .pricing-image-wrapper.clickable {
+    position: relative;
+    transition: background-color linear 250ms;
+    cursor: pointer;
+}
+
+#edge .edge-features #pricing-models-cards main .content .pricing-image-wrapper.clickable:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#edge .edge-features #pricing-models-cards main .content .pricing-image-wrapper.clickable a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#edge .edge-features #pricing-models-cards main .content .pricing-image-wrapper img {
+    width: 100%;
+}
+
+#edge .edge-features #pricing-models-cards main .content a.button {
+    text-align: center;
+    padding: 0.3rem 3rem;
+    cursor: pointer;
+    line-height: 30px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #45818e;
+    transition: 0.3s;
+}
+
+#edge .edge-features #pricing-models-cards main .content a.button:hover {
+    background-color: #3c6c79;
+    color: white;
+}
+
+#edge .edge-features #pricing-models-cards main .content .deploy-buttons a.button {
+    width: 205px;
+    min-width: 205px;
+}
+
+@media screen and (min-width: 1025px) {
+    #edge #peContent #pricing-models-cards {
+        flex-direction: row;
+    }
+
+    #edge #peContent #pricing-models-cards main {
+        margin: 15px;
+        padding: 16px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #edge #peContent #pricing-models-cards main .content .content-block .marketplace .pricing-image-wrapper {
+        margin: 2px;
+        padding: 8px;
+    }
+}
+
+html#pricing {
+    color: #424242;
+}
+
+html#pricing .tCenter {
+    text-align: center;
+}
+
+html#pricing #hero {
+    padding-top: 60px;
+}
+
+html#pricing #encyclopedia {
+    padding: 0;
+    overflow: initial;
+}
+
+html#pricing .flyout-button {
+    display: none;
+}
+
+html#pricing #viewPricing.center-button {
+    display: none;
+}
+
+@media (min-width: 1400px) {
+    html#pricing .col-gt-xl {
+        flex: 1;
+        max-width: 100%;
+    }
+}
+
+html#pricing #pricingContent {
+    color: #212529;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 686px) {
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end {
+        justify-content: center !important;
+    }
+
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end .solution-selector {
+        width: 100%;
+    }
+
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#edge-community,
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#edge-pay-as-you-go,
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#edge-perpetual {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#edge-community h3,
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#edge-pay-as-you-go h3,
+    html#pricing #pricingContent #thingsboard-edge .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#edge-perpetual h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 415px) {
+    html#pricing #pricingContent #trendz-self-managed .pricing-content-header .col.d-flex.justify-content-end {
+        justify-content: center !important;
+    }
+
+    html#pricing #pricingContent #trendz-self-managed .pricing-content-header .col.d-flex.justify-content-end .solution-selector {
+        width: 100%;
+    }
+
+    html#pricing #pricingContent #trendz-self-managed .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#trendz-pay-as-you-go,
+    html#pricing #pricingContent #trendz-self-managed .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#trendz-perpetual {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    html#pricing #pricingContent #trendz-self-managed .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#trendz-pay-as-you-go h3,
+    html#pricing #pricingContent #trendz-self-managed .pricing-content-header .col.d-flex.justify-content-end .solution-selector .solution#trendz-perpetual h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+html#pricing #pricingContent .faq-content {
+    padding: 60px 0 80px;
+}
+
+html#pricing #pricingContent .faq-content *+h2,
+html#pricing #pricingContent .faq-content *+h3,
+html#pricing #pricingContent .faq-content *+h4,
+html#pricing #pricingContent .faq-content *+h5,
+html#pricing #pricingContent .faq-content *+h6 {
+    margin-top: 30px;
+}
+
+html#pricing #pricingContent .faq-content h1 {
+    text-align: center;
+}
+
+html#pricing #pricingContent .faq-content h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 54px;
+}
+
+html#pricing #pricingContent .faq-content h2#faq {
+    padding-bottom: 48px;
+}
+
+html#pricing #pricingContent .faq-content h3 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+html#pricing #pricingContent .faq-content p {
+    line-height: 1.5em;
+}
+
+html#pricing #pricingContent .faq-content ul,
+html#pricing #pricingContent .faq-content ol {
+    margin: 20px 0;
+    padding-left: 30px;
+    font-weight: 400;
+}
+
+html#pricing #pricingContent .faq-content ul li {
+    list-style: disc;
+    margin-bottom: 0.75em;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion h4.title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 22px;
+    transition: none;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion h4.title:after {
+    content: "+";
+    position: absolute;
+    right: 25px;
+    font-size: 28px;
+    color: #707275;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    margin-right: 1px;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion div.item {
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    overflow: visible;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion div.item:hover {
+    border: 2px solid #2A7DEC;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion div.item:hover h4.title {
+    padding: 21px;
+    color: #1f3a52;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion div.item:hover h4.title:after {
+    color: #1f3a52;
+    right: 24px;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion div.item:not(:last-of-type) {
+    margin-bottom: 7px;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion div.item:before {
+    display: block;
+    content: " ";
+    margin-top: -70px;
+    height: 70px;
+    visibility: hidden;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion div.item>h4.title:before {
+    display: none;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion .content {
+    border: none;
+    box-shadow: none;
+    border-radius: 4px;
+    padding: 5px 50px 25px 10px;
+    margin: 0 10px 10px;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion .item.on {
+    border: 2px solid #2A7DEC;
+    box-shadow: 0 18px 16px -10px rgba(42, 125, 236, 0.25);
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion .item.on h4.title {
+    padding: 21px;
+}
+
+html#pricing #pricingContent .faq-content .pi-accordion .item.on h4.title:after {
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+    margin: unset;
+}
+
+html#pricing #pricingContent a.btn-blue,
+html#pricing #pricingContent button.btn-blue {
+    background-color: #2A7DEC;
+    color: #fff;
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 4px;
+    border: solid 2px #2A7DEC;
+    box-shadow: 0 18px 16px -10px rgba(42, 125, 236, 0.25);
+    line-height: 28px;
+}
+
+html#pricing #pricingContent a.btn-blue:hover,
+html#pricing #pricingContent button.btn-blue:hover {
+    background-color: #fff;
+    color: #2A7DEC;
+}
+
+html#pricing #pricingContent a.btn-blue {
+    text-decoration: none;
+}
+
+html#pricing #pricingContent .pricing-square {
+    padding: 25px 32px;
+    box-shadow: 0 52px 40px -32px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    height: 100%;
+}
+
+html#pricing #pricingContent .pricing-square h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+html#pricing #pricingContent .pricing-square .pricing-square-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #707275;
+}
+
+@media (min-width: 768px) {
+    html#pricing #pricingContent .pricing-square .pricing-square-description {
+        min-height: 110px;
+    }
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent .pricing-square .pricing-square-description {
+        min-height: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html#pricing #pricingContent .pricing-square .pricing-square-description {
+        min-height: 120px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html#pricing #pricingContent .pricing-square .pricing-square-description {
+        min-height: 100px;
+    }
+}
+
+html#pricing #pricingContent .pricing-square .pricing-square-description p {
+    margin-bottom: 1rem;
+}
+
+html#pricing #pricingContent .pricing-square .pricing-square-price {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+    html#pricing #pricingContent .pricing-square .pricing-square-price {
+        min-height: 42px;
+    }
+}
+
+html#pricing #pricingContent .pricing-square .pricing-square-price span {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+html#pricing #pricingContent .pricing-square .pricing-square-item {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 5px;
+    margin-left: 32px;
+}
+
+html#pricing #pricingContent .pricing-square .pricing-square-item:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background: url("/images/item-check.svg") no-repeat;
+    width: 18px;
+    height: 19px;
+    margin-right: 11px;
+    margin-left: -32px;
+}
+
+html#pricing #pricingContent .solution-selector {
+    height: 44px;
+    border-radius: 26px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent .solution-selector {
+        margin-bottom: 0;
+    }
+}
+
+html#pricing #pricingContent .solution-selector .solution {
+    padding-left: 14px;
+    padding-right: 24px;
+}
+
+html#pricing #pricingContent .solution-selector .solution:nth-of-type(1) {
+    margin-right: 12px;
+}
+
+html#pricing #pricingContent .solution-selector .solution h3 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 480px) {
+    html#pricing #pricingContent .solution-selector .solution h3 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+html#pricing #pricingContent .solution-selector .solution h3:before {
+    padding-right: 12px;
+    line-height: 42px;
+}
+
+html#pricing #pricingContent .solution-selector .solution.active {
+    border-radius: 22px;
+}
+
+html#pricing #pricingContent .product-selector {
+    height: 44px;
+    border-radius: 26px;
+}
+
+html#pricing #pricingContent .product-selector .solution {
+    padding-left: 14px;
+    padding-right: 24px;
+}
+
+html#pricing #pricingContent .product-selector .solution:nth-of-type(1) {
+    margin-right: 12px;
+}
+
+html#pricing #pricingContent .product-selector .solution h3 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 480px) {
+    html#pricing #pricingContent .product-selector .solution h3 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+html#pricing #pricingContent .product-selector .solution h3:before {
+    padding-right: 12px;
+    line-height: 42px;
+}
+
+html#pricing #pricingContent .product-selector .solution.active {
+    border-radius: 22px;
+}
+
+html#pricing #pricingContent a.faq-link:after {
+    transform: translate(5%, -80%);
+}
+
+html#pricing #pricingContent .solution-selector,
+html#pricing #pricingContent .product-selector {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+html#pricing #pricingContent .solution-selector .solution,
+html#pricing #pricingContent .product-selector .solution {
+    position: relative;
+    color: #707275;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 415px) {
+
+    html#pricing #pricingContent .solution-selector .solution#trendz-pay-as-you-go,
+    html#pricing #pricingContent .solution-selector .solution#trendz-perpetual,
+    html#pricing #pricingContent .product-selector .solution#trendz-pay-as-you-go,
+    html#pricing #pricingContent .product-selector .solution#trendz-perpetual {
+        flex: 1;
+    }
+
+    html#pricing #pricingContent .solution-selector .solution#trendz-pay-as-you-go::before,
+    html#pricing #pricingContent .solution-selector .solution#trendz-perpetual::before,
+    html#pricing #pricingContent .product-selector .solution#trendz-pay-as-you-go::before,
+    html#pricing #pricingContent .product-selector .solution#trendz-perpetual::before {
+        display: none !important;
+    }
+}
+
+@media (max-width: 686px) {
+
+    html#pricing #pricingContent .solution-selector .solution#edge-community,
+    html#pricing #pricingContent .solution-selector .solution#edge-pay-as-you-go,
+    html#pricing #pricingContent .solution-selector .solution#edge-perpetual,
+    html#pricing #pricingContent .product-selector .solution#edge-community,
+    html#pricing #pricingContent .product-selector .solution#edge-pay-as-you-go,
+    html#pricing #pricingContent .product-selector .solution#edge-perpetual {
+        flex: 1;
+    }
+
+    html#pricing #pricingContent .solution-selector .solution#edge-community::before,
+    html#pricing #pricingContent .solution-selector .solution#edge-pay-as-you-go::before,
+    html#pricing #pricingContent .solution-selector .solution#edge-perpetual::before,
+    html#pricing #pricingContent .product-selector .solution#edge-community::before,
+    html#pricing #pricingContent .product-selector .solution#edge-pay-as-you-go::before,
+    html#pricing #pricingContent .product-selector .solution#edge-perpetual::before {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1450px) and (min-width: 1200px) {
+
+    html#pricing #pricingContent .solution-selector .solution#edge-community::before,
+    html#pricing #pricingContent .solution-selector .solution#edge-pay-as-you-go::before,
+    html#pricing #pricingContent .solution-selector .solution#edge-perpetual::before,
+    html#pricing #pricingContent .product-selector .solution#edge-community::before,
+    html#pricing #pricingContent .product-selector .solution#edge-pay-as-you-go::before,
+    html#pricing #pricingContent .product-selector .solution#edge-perpetual::before {
+        display: none !important;
+    }
+}
+
+html#pricing #pricingContent .solution-selector .solution h3,
+html#pricing #pricingContent .product-selector .solution h3 {
+    font-weight: 500;
+}
+
+html#pricing #pricingContent .solution-selector .solution h3:before,
+html#pricing #pricingContent .product-selector .solution h3:before {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+html#pricing #pricingContent .solution-selector .solution h3 a.faq-link:after,
+html#pricing #pricingContent .product-selector .solution h3 a.faq-link:after {
+    margin-left: 2px;
+}
+
+@media (max-width: 415px) {
+
+    html#pricing #pricingContent .solution-selector .solution#trendz-pay-as-you-go a,
+    html#pricing #pricingContent .solution-selector .solution#trendz-perpetual a,
+    html#pricing #pricingContent .product-selector .solution#trendz-pay-as-you-go a,
+    html#pricing #pricingContent .product-selector .solution#trendz-perpetual a {
+        display: none;
+    }
+}
+
+@media (max-width: 686px) {
+
+    html#pricing #pricingContent .solution-selector .solution#edge-community a,
+    html#pricing #pricingContent .solution-selector .solution#edge-pay-as-you-go a,
+    html#pricing #pricingContent .solution-selector .solution#edge-perpetual a,
+    html#pricing #pricingContent .product-selector .solution#edge-community a,
+    html#pricing #pricingContent .product-selector .solution#edge-pay-as-you-go a,
+    html#pricing #pricingContent .product-selector .solution#edge-perpetual a {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) and (min-width: 1200px) {
+
+    html#pricing #pricingContent .solution-selector .solution#edge-community a,
+    html#pricing #pricingContent .solution-selector .solution#edge-pay-as-you-go a,
+    html#pricing #pricingContent .solution-selector .solution#edge-perpetual a,
+    html#pricing #pricingContent .product-selector .solution#edge-community a,
+    html#pricing #pricingContent .product-selector .solution#edge-pay-as-you-go a,
+    html#pricing #pricingContent .product-selector .solution#edge-perpetual a {
+        display: none;
+    }
+}
+
+html#pricing #pricingContent .solution-selector .solution.pay-as-you-go:before,
+html#pricing #pricingContent .product-selector .solution.pay-as-you-go:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background: url("/images/pricing/payg-icon.svg") no-repeat;
+    filter: invert(53%) sepia(8%) saturate(130%) hue-rotate(145deg) brightness(93%) contrast(91%);
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+html#pricing #pricingContent .solution-selector .solution.perpetual:before,
+html#pricing #pricingContent .product-selector .solution.perpetual:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background: url("/images/pricing/perpetual-icon.svg") no-repeat;
+    filter: invert(53%) sepia(8%) saturate(130%) hue-rotate(145deg) brightness(93%) contrast(91%);
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+html#pricing #pricingContent .solution-selector .solution.community-edition:before,
+html#pricing #pricingContent .product-selector .solution.community-edition:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background: url("/images/pricing/source-code-icon.svg") no-repeat;
+    filter: invert(53%) sepia(8%) saturate(130%) hue-rotate(145deg) brightness(93%) contrast(91%);
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+html#pricing #pricingContent .solution-selector .solution.thingsboard-cloud:before,
+html#pricing #pricingContent .solution-selector .solution.trendz-cloud:before,
+html#pricing #pricingContent .product-selector .solution.thingsboard-cloud:before,
+html#pricing #pricingContent .product-selector .solution.trendz-cloud:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background: url("/images/pricing/cloud-icon.svg") no-repeat;
+    filter: invert(53%) sepia(8%) saturate(130%) hue-rotate(145deg) brightness(93%) contrast(91%);
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+html#pricing #pricingContent .solution-selector .solution.thingsboard-pe:before,
+html#pricing #pricingContent .solution-selector .solution.trendz-self-managed:before,
+html#pricing #pricingContent .product-selector .solution.thingsboard-pe:before,
+html#pricing #pricingContent .product-selector .solution.trendz-self-managed:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background: url("/images/pricing/self-icon.svg") no-repeat;
+    filter: invert(53%) sepia(8%) saturate(130%) hue-rotate(145deg) brightness(93%) contrast(91%);
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+html#pricing #pricingContent .solution-selector .solution.active,
+html#pricing #pricingContent .product-selector .solution.active {
+    color: #fff;
+    background: #2A7DEC;
+    box-shadow: 0 18px 16px -10px rgba(42, 125, 236, 0.25);
+}
+
+html#pricing #pricingContent .solution-selector .solution.active:before,
+html#pricing #pricingContent .product-selector .solution.active:before {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(242deg) brightness(107%) contrast(101%);
+}
+
+html#pricing #pricingContent .solution-selector .solution.active:after,
+html#pricing #pricingContent .product-selector .solution.active:after {
+    background-color: #fff;
+}
+
+html#pricing #pricingContent .solution-selector .solution:hover:not(.active),
+html#pricing #pricingContent .product-selector .solution:hover:not(.active) {
+    color: #000;
+}
+
+html#pricing #pricingContent .solution-selector .solution:hover:not(.active):before,
+html#pricing #pricingContent .product-selector .solution:hover:not(.active):before {
+    filter: invert(11%) sepia(10%) saturate(825%) hue-rotate(169deg) brightness(93%) contrast(90%);
+}
+
+html#pricing #pricingContent div.pricing-content {
+    position: relative;
+    z-index: 4;
+    padding-top: 0;
+    padding-bottom: 60px;
+    background-color: #f4f7fa;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-content-header {
+    padding-top: 20px;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent div.pricing-content .pricing-content-header {
+        flex-direction: row;
+        padding-top: 56px;
+    }
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-content-header h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent div.pricing-content .pricing-content-header h2 {
+        font-size: 30px;
+        line-height: 46px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html#pricing #pricingContent div.pricing-content .pricing-content-header h2 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-content-header .pricing-content-description {
+    display: none;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-content-header .pricing-content-description.active {
+    display: block;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-content-header .pricing-content-details {
+    padding-top: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #707275;
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent div.pricing-content .pricing-content-header .pricing-content-details {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html#pricing #pricingContent div.pricing-content .pricing-content-header .pricing-content-details {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+html#pricing #pricingContent div.pricing-content#thingsboard-ce {
+    padding-top: 60px;
+}
+
+html#pricing #pricingContent div.pricing-content#thingsboard-ce .pricing-div {
+    margin-top: 25px;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-div {
+    margin-top: 65px;
+    padding-bottom: 20px;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-div .pricing-section {
+    display: none;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-div .pricing-section.active {
+    display: block;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-div .indicator {
+    font-size: 28px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+html#pricing #pricingContent div.pricing-content .pricing-div .btn-pricing {
+    margin-top: 18px;
+    margin-bottom: 54px;
+    min-width: 200px;
+}
+
+html#pricing #pricingContent div.pricing-content#trendz-cloud .pricing-div .ml-form-embedWrapper {
+    padding: 0 0 23px 0;
+}
+
+html#pricing #pricingContent div.pricing-content#trendz-cloud .pricing-div li.pricing-square-item {
+    margin: 20px 0 0;
+}
+
+html#pricing #pricingContent div.pricing-content#trendz-cloud .pricing-div ul {
+    padding: 0 0 0 20px;
+}
+
+html#pricing #pricingContent div.pricing-content#trendz-cloud .pricing-div ul li {
+    list-style: disc;
+}
+
+html#pricing #pricingContent .select-product-content {
+    height: 64px;
+}
+
+@media (min-width: 768px) {
+    html#pricing #pricingContent .select-product-content {
+        height: 64px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html#pricing #pricingContent .select-product-content {
+        height: 96px;
+    }
+}
+
+html#pricing #pricingContent .pricing-header-divider {
+    height: 8px;
+    width: 100%;
+    background-color: #102A4E;
+}
+
+html#pricing #pricingContent .pricing-header-divider:not(.no-margin) {
+    margin-top: 64px;
+}
+
+@media (min-width: 768px) {
+    html#pricing #pricingContent .pricing-header-divider:not(.no-margin) {
+        margin-top: 64px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html#pricing #pricingContent .pricing-header-divider:not(.no-margin) {
+        margin-top: 96px;
+    }
+}
+
+html#pricing #pricingContent .pricing-hero {
+    position: relative;
+    z-index: 6;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+html#pricing #pricingContent .pricing-hero .pricing-hero-content {
+    padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent .pricing-hero .pricing-hero-content {
+        padding-top: 56px;
+    }
+}
+
+html#pricing #pricingContent .pricing-hero .pricing-hero-content h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+@media (min-width: 768px) {
+    html#pricing #pricingContent .pricing-hero .pricing-hero-content h1 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent .pricing-hero .pricing-hero-content h1 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html#pricing #pricingContent .pricing-hero .pricing-hero-content h1 {
+        font-size: 42px;
+        line-height: 64px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html#pricing #pricingContent .pricing-hero .pricing-hero-content h1 {
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+
+html#pricing #pricingContent .pricing-hero .pricing-hero-content h5 {
+    margin-bottom: 0;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #707275;
+}
+
+@media (min-width: 1400px) {
+    html#pricing #pricingContent .pricing-hero .pricing-hero-content h5 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+html#pricing #pricingContent .pricing-hero .pricing-hero-content .pricing-hero-description {
+    max-width: 800px;
+    margin: auto;
+}
+
+html#pricing #pricingContent .pricing-hero .pricing-hero-content .pricing-hero-description p {
+    margin-bottom: 0;
+}
+
+html#pricing #pricingContent .inner-navigation {
+    position: relative;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html#pricing #pricingContent .inner-navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 426px) {
+    html#pricing #pricingContent .inner-navigation ul {
+        justify-content: center;
+    }
+
+    html#pricing #pricingContent .inner-navigation ul li a::before {
+        display: none !important;
+    }
+}
+
+html#pricing #pricingContent .inner-navigation ul li {
+    position: relative;
+    display: table;
+    height: 68px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+html#pricing #pricingContent .inner-navigation ul li a {
+    text-decoration: none;
+    display: block;
+    line-height: initial;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    border-radius: 34px;
+    font-size: 12px;
+    color: #212529;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px 12px 8px 10px;
+    letter-spacing: 1px;
+}
+
+html#pricing #pricingContent .inner-navigation ul li a:hover {
+    border-color: #212529;
+    border-width: 2px;
+    margin: -1px;
+}
+
+html#pricing #pricingContent .inner-navigation ul li a:before {
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    margin-right: 6px;
+    width: 22px;
+    height: 22px;
+}
+
+@media (min-width: 992px) {
+    html#pricing #pricingContent .inner-navigation ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html#pricing #pricingContent .inner-navigation ul li a {
+        font-size: 18px;
+        padding: 14px 32px 14px 24px;
+    }
+
+    html#pricing #pricingContent .inner-navigation ul li a:before {
+        margin-right: 12px;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html#pricing #pricingContent .inner-navigation ul li a {
+        font-size: 24px;
+    }
+}
+
+html#pricing #pricingContent .inner-navigation ul li.tb-logo a:before {
+    background: url("/images/pricing/thingsboard-icon.svg");
+    filter: invert(11%) sepia(10%) saturate(825%) hue-rotate(169deg) brightness(93%) contrast(90%);
+    background-size: contain;
+}
+
+html#pricing #pricingContent .inner-navigation ul li.trendz-logo a:before {
+    background: url("/images/pricing/trendz-icon.svg");
+    filter: invert(11%) sepia(10%) saturate(825%) hue-rotate(169deg) brightness(93%) contrast(90%);
+    background-size: contain;
+}
+
+html#pricing #pricingContent .inner-navigation ul li.tb-edge-logo a:before {
+    background: url("/images/edge/tb-edge-logo-black.svg");
+    background-size: contain;
+}
+
+html#pricing #pricingContent .inner-navigation ul li.active {
+    z-index: 5;
+}
+
+html#pricing #pricingContent .inner-navigation ul li.active a {
+    color: #fff;
+    background-color: #2A7DEC;
+    box-shadow: 0 18px 16px -10px rgba(42, 125, 236, 0.25);
+}
+
+html#pricing #pricingContent .inner-navigation ul li.active a:hover {
+    border-color: #2A7DEC;
+    border-width: 1px;
+    margin: unset;
+}
+
+html#pricing #pricingContent .inner-navigation ul li.active.tb-logo a:before {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(242deg) brightness(107%) contrast(101%);
+    background-size: contain;
+}
+
+html#pricing #pricingContent .inner-navigation ul li.active.trendz-logo a:before {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(242deg) brightness(107%) contrast(101%);
+    background-size: contain;
+}
+
+html#pricing #pricingContent .inner-navigation ul li.active.tb-edge-logo a:before {
+    background: url("/images/edge/tb-edge-logo-white.svg");
+    background-size: contain;
+}
+
+/* ====================================== END PRICING  =================================================== */
+
+/* ====================================== IOT  =================================================== */
+
+#iot-article h1 {
+    color: #333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0.48px;
+    padding-bottom: 20px;
+}
+
+#iot-article h2 {
+    color: #333;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0.36px;
+    padding-bottom: 20px;
+}
+
+#iot-article h2.line-height-small {
+    line-height: 50px;
+}
+
+#iot-article h3 {
+    color: #2E2F3B;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.028px;
+    padding-bottom: 60px;
+}
+
+#iot-article h3.small-padding {
+    padding-bottom: 20px;
+}
+
+#iot-article h4 {
+    color: #2E2F3B;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.022px;
+}
+
+#iot-article .h4-left {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+#iot-article .article-link {
+    text-decoration: underline;
+}
+
+#iot-article .article-link::hover {
+    color: #69b6ff;
+}
+
+#iot-article .header-link {
+    color: unset;
+}
+
+#iot-article .sub-title {
+    display: block;
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.022px;
+}
+
+#iot-article .center-text {
+    text-align: center;
+}
+
+#iot-article .iot-article-content {
+    width: 100%;
+}
+
+#iot-article .iot-article-content .hero {
+    padding-top: 80px;
+}
+
+#iot-article .iot-article-content .wrapper-main-color {
+    background-color: #FFFFFF;
+}
+
+#iot-article .iot-article-content .wrapper-accent-color {
+    background-color: #F5F5F6;
+}
+
+#iot-article .iot-article-content .block-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content {
+    width: 100%;
+    max-width: 1090px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .image {
+    width: 100%;
+    object-fit: contain;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper {
+    width: 100%;
+    margin-top: 60px;
+    padding: 0 95px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #sub-title-iot-solutions-2 {
+    margin-bottom: 60px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .read-info {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.018px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content {
+    width: 100%;
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.022px;
+    margin-bottom: 60px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content .bold {
+    font-weight: 600;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.small-margin {
+    margin-bottom: 20px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.medium-margin {
+    margin-bottom: 40px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list {
+    padding-bottom: 48px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list li {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.022px;
+    list-style-type: disc;
+    margin-left: 35px;
+    padding-bottom: 12px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list li .bold-text {
+    font-weight: 600;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list li .paragraph-list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #list-tb-offers {
+    padding-bottom: 68px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table {
+    padding-bottom: 60px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th {
+    padding-bottom: 20px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th:nth-child(1) {
+    padding-left: 130px;
+    padding-right: 32px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th:nth-child(2) {
+    padding-left: 32px;
+    padding-right: 130px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th .column-header {
+    display: block;
+    color: #2E2F3B;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.022px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr:nth-child(1) {
+    padding: 10px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr:nth-child(odd) {
+    background-color: #F3F4F4;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td {
+    width: 50%;
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.018px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td:nth-child(1) {
+    padding-left: 130px;
+    padding-right: 32px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td:nth-child(2) {
+    padding-left: 32px;
+    padding-right: 130px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .comparison-table.mobile-table {
+    display: none;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block h2 {
+    padding-bottom: 15px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+    background-color: #F3F4F4;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .term {
+    display: list-item;
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.018px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .term.bold {
+    font-weight: 600;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .term.padding-top {
+    padding-top: 10px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .definition {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.018px;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item.align-start {
+    align-items: start;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item.one-to-one-and-half {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+#iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list.side-paddings {
+    padding: 0 55px;
+}
+
+#iot-article .iot-article-content .block-wrapper.medium-padding {
+    padding-bottom: 50px;
+}
+
+#iot-article .iot-article-content .details-cards-block-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    max-width: 1100px;
+}
+
+#iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background: #F5F5F6;
+    padding: 60px 28px 80px 28px;
+}
+
+#iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .header {
+    color: #333;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.022px;
+}
+
+#iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .content {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.018px;
+}
+
+#iot-article .iot-article-content #details-block {
+    padding: 80px 0;
+}
+
+#iot-article .iot-article-content #details-block .block-content {
+    max-width: 1160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 40px;
+}
+
+#iot-article .iot-article-content #details-block .block-content .detail .detail-name {
+    color: #2E2F3B;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.028px;
+}
+
+#iot-article .iot-article-content #details-block .block-content .detail .detail-description {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.018px;
+}
+
+#iot-article .iot-article-content #contact-us {
+    padding: 70px 0 160px 0;
+}
+
+#iot-article .iot-article-content #contact-us .block-content {
+    max-width: 1258px;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 179px;
+    padding-right: 100px;
+    max-width: 700px;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .title {
+    color: #333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0.48px;
+    margin-bottom: 12px;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .text {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.016px;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form {
+    padding-top: 30px;
+    z-index: 2;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form .form-element {
+    margin-bottom: 28px;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form .form-element label {
+    position: relative;
+    width: 100%;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form .form-element label p {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    z-index: 2;
+    padding: 0px 5px;
+    background: white;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form .form-element label .contact-us-form-control {
+    width: 100%;
+    color: #898B8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 16px 18px;
+}
+
+#iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form .contact-us-button {
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    background-color: #2A7DEC;
+    width: 100%;
+}
+
+#iot-article footer {
+    position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+    #iot-article h1 {
+        font-size: 36px;
+        line-height: 40px;
+        padding-bottom: 12px;
+    }
+
+    #iot-article h2 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 15px;
+    }
+
+    #iot-article h2.line-height-small {
+        line-height: 30px;
+    }
+
+    #iot-article h3 {
+        font-size: 26px;
+        line-height: 40px;
+        padding-bottom: 36px;
+    }
+
+    #iot-article h3.small-padding {
+        padding-bottom: 15px;
+    }
+
+    #iot-article .sub-title {
+        font-size: 17px;
+    }
+
+    #iot-article .iot-article-content .hero {
+        padding-top: 98px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper {
+        padding: 0 80px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper {
+        padding: 0 70px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .read-info {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 45px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list {
+        padding-bottom: 32px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list li {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+        background-color: #F3F4F4;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .term {
+        display: list-item;
+        font-size: 17px;
+        line-height: 34px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .definition {
+        font-size: 17px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list.side-paddings {
+        padding: 0 32px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block {
+        max-width: 960px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card {
+        padding-bottom: 60px;
+    }
+
+    #iot-article .iot-article-content #details-block {
+        padding: 80px 70px;
+    }
+
+    #iot-article .iot-article-content #contact-us {
+        padding: 70px 70px 160px 70px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content {
+        max-width: 1000px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #iot-article h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 12px;
+    }
+
+    #iot-article h2 {
+        font-size: 26px;
+        line-height: 36px;
+        padding-bottom: 15px;
+    }
+
+    #iot-article h2.line-height-small {
+        line-height: 32px;
+    }
+
+    #iot-article h3 {
+        font-size: 22px;
+        line-height: 36px;
+        padding-bottom: 40px;
+    }
+
+    #iot-article h3.small-padding {
+        padding-bottom: 15px;
+    }
+
+    #iot-article .sub-title {
+        font-size: 17px;
+    }
+
+    #iot-article .iot-article-content .hero {
+        padding-top: 98px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper {
+        padding: 0 40px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper {
+        padding: 0 30px;
+        margin-top: 40px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .read-info {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.small-margin {
+        margin-bottom: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.medium-margin {
+        margin-bottom: 25px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #sub-title-iot-solutions-2 {
+        margin-bottom: 45px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list {
+        padding-bottom: 28px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list li {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #list-tb-offers {
+        padding-bottom: 40px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table {
+        padding-bottom: 60px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th {
+        padding-bottom: 20px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th:nth-child(1) {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th:nth-child(2) {
+        padding-left: 10px;
+        padding-right: 60px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th .column-header {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td:nth-child(1) {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td:nth-child(2) {
+        padding-left: 10px;
+        padding-right: 60px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item {
+        padding: 10px 35px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+        background-color: #F3F4F4;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .term {
+        display: list-item;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .definition {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list.side-paddings {
+        padding: 0;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper {
+        padding: 0 20px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block {
+        grid-column-gap: 15px;
+        max-width: unset;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card {
+        height: auto;
+        padding: 35px 20px 40px 20px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .header {
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .content {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    #iot-article .iot-article-content #details-block {
+        padding: 40px 40px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content {
+        grid-column-gap: 60px;
+        grid-row-gap: 20px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content .detail .detail-name {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content .detail .detail-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #iot-article .iot-article-content #contact-us {
+        padding: 20px 40px 120px 40px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content {
+        max-width: 1140px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content {
+        flex-direction: column;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    #iot-article h1 {
+        font-size: 28px;
+        line-height: 40px;
+        padding-bottom: 12px;
+    }
+
+    #iot-article h2 {
+        font-size: 22px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+
+    #iot-article h2.line-height-small {
+        line-height: 30px;
+    }
+
+    #iot-article h3 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+
+    #iot-article h3.small-padding {
+        padding-bottom: 10px;
+    }
+
+    #iot-article .sub-title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #iot-article .iot-article-content .hero {
+        padding-top: 98px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper {
+        padding: 0 20px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper {
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .read-info {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.small-margin {
+        margin-bottom: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.medium-margin {
+        margin-bottom: 25px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #sub-title-iot-solutions-2 {
+        margin-bottom: 45px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list {
+        padding-bottom: 28px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list li {
+        font-size: 15px;
+        line-height: 24px;
+        margin-left: 22px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #list-tb-offers {
+        padding-bottom: 40px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table {
+        padding-bottom: 60px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th {
+        padding-bottom: 20px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th:nth-child(1) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th .column-header {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td {
+        font-size: 15px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td:nth-child(1) {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table.desktop-table {
+        display: none;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table.mobile-table {
+        display: table;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .mobile-table.first-child {
+        margin-bottom: 30px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 35px;
+        align-items: center;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+        background-color: #F3F4F4;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .term {
+        display: list-item;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .definition {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item.one-to-one-and-half {
+        grid-template-columns: 1fr;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block {
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        max-width: unset;
+        grid-template-columns: 1fr;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card {
+        height: auto;
+        padding: 20px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .header {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .content {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #iot-article .iot-article-content #details-block {
+        padding: 20px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content {
+        grid-template-columns: 1fr;
+        grid-column-gap: 60px;
+        grid-row-gap: 20px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content .detail .detail-name {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content .detail .detail-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #iot-article .iot-article-content #contact-us {
+        padding: 20px 20px 80px 20px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content {
+        max-width: 1140px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content {
+        flex-direction: column;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form .form-element label .contact-us-form-control {
+        font-size: 15px;
+    }
+}
+

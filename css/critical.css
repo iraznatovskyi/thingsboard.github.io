@@ -2407,7 +2407,7 @@ section {
   }
 } */
 
-hr {
+/* hr {
   border-top: 1px solid #212529;
   opacity: 0.1;
   margin-top: 54px;
@@ -2515,3 +2515,4 @@ hr {
 .fa-chevron-down:before {
   content: "\f078";
 }
+ */

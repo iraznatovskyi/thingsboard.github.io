@@ -1,0 +1,677 @@
+.sub-menus-block {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sub-menus-block .sub-menu {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.001em;
+    text-align: left;
+    color: #333333;
+}
+
+.definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+    background-color: #f3f4f4;
+}
+
+.definitions-block .definitions-list .definitions-list-item {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.definitions-block .definitions-list .definitions-list-item .term {
+    display: list-item;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: .001em;
+    text-align: left;
+    color: #333;
+    padding: 10px;
+}
+
+.definitions-block .definitions-list .definitions-list-item .term.bold {
+    font-weight: 600;
+}
+
+.definitions-block .definitions-list .definitions-list-item .term.padding-top {
+    padding-top: 10px;
+}
+
+.definitions-block .definitions-list .definitions-list-item .definition {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.001em;
+    text-align: left;
+    color: #5E5F62;
+}
+
+.definitions-block .definitions-list .definitions-list-item .definition span {
+    display: list-item;
+    margin-left: 30px;
+}
+
+.definitions-block .definitions-list .definitions-list-item.align-start {
+    align-items: start;
+}
+
+.definitions-block .definitions-list .definitions-list-item.one-to-one-and-half {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.definitions-block .definitions-list.side-paddings {
+    padding: 0 55px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #contact-us {
+        padding: 20px 40px 120px 40px;
+    }
+
+    #contact-us .block-content {
+        max-width: 1140px;
+    }
+
+    #contact-us .block-content .contact-us-content {
+        flex-direction: column;
+    }
+
+    #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #contact-us .block-content .contact-us-content .info .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #contact-us .block-content .contact-us-content .info .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #contact-us .block-content .contact-us-content .contact-form {
+        max-width: 500px;
+    }
+}
+
+#contact-us {
+    padding: 70px 0 160px 0;
+}
+
+#contact-us .block-content .contact-us-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-us .block-content .contact-us-content .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding-right: 100px;
+    max-width: 700px;
+}
+
+#contact-us .block-content .contact-us-content .info .title {
+    color: #333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0.48px;
+    margin-bottom: 12px;
+}
+
+#contact-us .block-content .contact-us-content .info .text {
+    color: #5E5F62;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.016px;
+}
+
+#contact-us .block-content .contact-us-content .contact-form1 {
+    padding-top: 30px;
+    z-index: 2;
+}
+
+#contact-us .block-content .contact-us-content .contact-form1 .form-element {
+    margin-bottom: 28px;
+}
+
+#contact-us .block-content .contact-us-content .contact-form1 .form-element label {
+    position: relative;
+    width: 100%;
+}
+
+#contact-us .block-content .contact-us-content .contact-form1 .form-element label .second-placeholder {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    z-index: 2;
+    padding: 0px 5px;
+    background: white;
+}
+
+#contact-us .block-content .contact-us-content .contact-form1 .form-element label .contact-us-form-control {
+    width: 100%;
+    color: #898B8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 16px 18px;
+}
+
+#contact-us .block-content .contact-us-content .contact-form1 .contact-us-button {
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    background-color: #2A7DEC;
+    width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    #contact-us {
+        padding: 70px 70px 160px 70px;
+    }
+
+    #contact-us .block-content {
+        max-width: 1000px;
+    }
+
+    #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #contact-us .block-content .contact-us-content .info .title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+        background-color: #F3F4F4;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item .term {
+        display: list-item;
+        font-size: 17px;
+        line-height: 34px;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item .definition {
+        font-size: 17px;
+    }
+
+    .definitions-block .definitions-list.side-paddings {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact-us {
+        padding: 20px 40px 120px 40px;
+    }
+
+    #contact-us .block-content {
+        max-width: 1140px;
+    }
+
+    #contact-us .block-content .contact-us-content {
+        flex-direction: column;
+    }
+
+    #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #contact-us .block-content .contact-us-content .info .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #contact-us .block-content .contact-us-content .info .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #contact-us .block-content .contact-us-content .contact-form {
+        max-width: 500px;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item {
+        padding: 10px 35px;
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        padding: 10px 50px;
+        align-items: center;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+        background-color: #F3F4F4;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item .term {
+        display: list-item;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item .definition {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .definitions-block .definitions-list.side-paddings {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    #contact-us {
+        padding: 20px 20px 80px 20px;
+    }
+
+    #contact-us .block-content {
+        max-width: 1140px;
+    }
+
+    #contact-us .block-content .contact-us-content {
+        flex-direction: column;
+    }
+
+    #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #contact-us .block-content .contact-us-content .info .title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    #contact-us .block-content .contact-us-content .info .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #contact-us .block-content .contact-us-content .contact-form .form-element label .contact-us-form-control {
+        font-size: 15px;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 35px;
+        align-items: center;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+        background-color: #F3F4F4;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item .term {
+        display: list-item;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item .definition {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .definitions-block .definitions-list .definitions-list-item.one-to-one-and-half {
+        grid-template-columns: 1fr;
+    }
+}
+
+element.style {
+    margin-bottom: 64px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.usecase-background {
+    z-index: -1;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+}
+
+.usecase-background img {
+    position: absolute;
+    top: -650px;
+    left: 134px;
+    box-shadow: none !important;
+}
+
+.usecase-background div {
+    position: absolute;
+    -ms-transform: skewY(-6deg);
+    transform: skewY(-6deg);
+    width: 436px;
+    height: 90px;
+}
+
+.usecase-background div.bottom-features1 {
+    top: -950px;
+    width: 2560px;
+    height: 3000px;
+    left: -1280px;
+    background-color: #F7F9FC;
+}
+
+.usecase-background div.bottom-features2 {
+    top: -240px;
+    width: 2560px;
+    height: 525px;
+    left: -1280px;
+    background-color: #252628;
+}
+
+.usecase-background div.small11 {
+    top: -382px;
+    left: 757px;
+    background-color: #2A7DEC;
+}
+
+.usecase-background div.small12 {
+    top: 334px;
+    right: 789px;
+    border: 4px solid #305680;
+}
+
+.usecase-background div.usecase-big-bg1 {
+    top: -890px;
+    width: 2560px;
+    height: 845px;
+    left: -1280px;
+    background-color: #F7F9FC;
+}
+
+.usecase-background div.usecase-big-bg2 {
+    top: 943px;
+    width: 2560px;
+    height: 845px;
+    left: -1280px;
+    background-color: #F7F9FC;
+}
+
+.usecase-background div.small7 {
+    top: 964px;
+    right: 406px;
+    border: 4px solid #2A7DEC;
+}
+
+.usecase-background div.small8 {
+    top: 1018px;
+    right: 458px;
+    background-color: #305680;
+}
+
+.usecase-background div.small9 {
+    top: -116px;
+    left: 466px;
+    border: 4px solid #0D2743;
+}
+
+.usecase-background div.small10 {
+    top: -183px;
+    left: 658px;
+    background-color: #2A7DEC;
+}
+
+@media screen and (max-width: 671px) {
+    #iot-article h1 {
+        font-size: 28px;
+        line-height: 40px;
+        padding-bottom: 12px;
+    }
+
+    #iot-article h2 {
+        font-size: 22px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+
+    #iot-article h2.line-height-small {
+        line-height: 30px;
+    }
+
+    #iot-article h3 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+
+    #iot-article h3.small-padding {
+        padding-bottom: 10px;
+    }
+
+    #iot-article .sub-title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #iot-article .iot-article-content .hero {
+        padding-top: 98px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper {
+        padding: 0 20px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper {
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .read-info {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.small-margin {
+        margin-bottom: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .text-content.medium-margin {
+        margin-bottom: 25px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #sub-title-iot-solutions-2 {
+        margin-bottom: 45px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list {
+        padding-bottom: 28px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper .list li {
+        font-size: 15px;
+        line-height: 24px;
+        margin-left: 22px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .text-wrapper #list-tb-offers {
+        padding-bottom: 40px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table {
+        padding-bottom: 60px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th {
+        padding-bottom: 20px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th:nth-child(1) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table thead tr th .column-header {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td {
+        font-size: 15px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table tbody tr td:nth-child(1) {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table.desktop-table {
+        display: none;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .comparison-table.mobile-table {
+        display: table;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .mobile-table.first-child {
+        margin-bottom: 30px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 35px;
+        align-items: center;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item:nth-child(odd) {
+        background-color: #F3F4F4;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .term {
+        display: list-item;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item .definition {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #iot-article .iot-article-content .block-wrapper .block-content .definitions-block .definitions-list .definitions-list-item.one-to-one-and-half {
+        grid-template-columns: 1fr;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block {
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        max-width: unset;
+        grid-template-columns: 1fr;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card {
+        height: auto;
+        padding: 20px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .header {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #iot-article .iot-article-content .details-cards-block-wrapper .details-cards-block .details-card .content {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #iot-article .iot-article-content #details-block {
+        padding: 20px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content {
+        grid-template-columns: 1fr;
+        grid-column-gap: 60px;
+        grid-row-gap: 20px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content .detail .detail-name {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    #iot-article .iot-article-content #details-block .block-content .detail .detail-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #iot-article .iot-article-content #contact-us {
+        padding: 20px 20px 80px 20px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content {
+        max-width: 1140px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content {
+        flex-direction: column;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .info .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #iot-article .iot-article-content #contact-us .block-content .contact-us-content .contact-form .form-element label .contact-us-form-control {
+        font-size: 15px;
+    }
+}
