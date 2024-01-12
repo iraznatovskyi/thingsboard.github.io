@@ -59,6 +59,6 @@ var result = {
 
 return result;
 ```
-{: .copy-code}
+{: .copy-code.expandable-10}
 
 ![image](/images/user-guide/integrations/sigfox/sigfox-uplink-converter-tbel-pe.png)

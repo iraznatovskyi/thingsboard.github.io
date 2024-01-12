@@ -101,3 +101,12 @@ We got the next message:
 ## Next steps
 
 {% assign currentGuide = "DataProcessing" %}{% include templates/guides-banner.md %}
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+{% capture contenttogglespec %}
+Linux & Mac OS%,%linuxmacos%,%templates/mqtt-broker/install/linux-macos/linux-macos.md%br%
+Windows%,%windows%,%templates/mqtt-broker/install/windows/windows.md{% endcapture %}
+
+{% include content-toggle.liquid content-toggle-id="tbmqGettingStartedInstallation" toggle-spec=contenttogglespec %}
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

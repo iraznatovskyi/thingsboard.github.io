@@ -5,21 +5,21 @@
 {% assign githubLink = "https://github.com/thingsboard/thingsboard" %}
 {% assign githubLabel = "Star thingsboard/thingsboard on GitHub" %}
 {% if docsTag %}
-    {% if docsTag == "mqtt-broker" %}
-        {% assign githubLink = "https://github.com/thingsboard/tbmq" %}
-        {% assign githubLabel = "Star thingsboard/tbmq on GitHub" %}
-    {% elsif docsTag == "gw" %}
-        {% assign githubLink = "https://github.com/thingsboard/thingsboard-gateway" %}
-        {% assign githubLabel = "Star thingsboard/thingsboard-gateway on GitHub" %}
-    {% endif %}
-    {% assign foundProduct = site.data.products | where: "tag", docsTag %}
-    {% assign productInfo = foundProduct[0] %}
-    {% unless page.customTitle == "true" %}
-        {% assign customTitle = title | append: " | " %}
-        {% assign customTitle = customTitle | append: productInfo.fulltitle %}
-    {% endunless %}
+{% if docsTag == "mqtt-broker" %}
+{% assign githubLink = "https://github.com/thingsboard/tbmq" %}
+{% assign githubLabel = "Star thingsboard/tbmq on GitHub" %}
+{% elsif docsTag == "gw" %}
+{% assign githubLink = "https://github.com/thingsboard/thingsboard-gateway" %}
+{% assign githubLabel = "Star thingsboard/thingsboard-gateway on GitHub" %}
+{% endif %}
+{% assign foundProduct = site.data.products | where: "tag", docsTag %}
+{% assign productInfo = foundProduct[0] %}
+{% unless page.customTitle == "true" %}
+{% assign customTitle = title | append: " | " %}
+{% assign customTitle = customTitle | append: productInfo.fulltitle %}
+{% endunless %}
 {% elsif page.customTitle == "true" %}
-    {% assign customTitle = title %}
+{% assign customTitle = title %}
 {% endif %}
 
 <head>
@@ -27,7 +27,7 @@
     <meta name="cf-2fa-verify" content="a08672380de15e9">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     {% if customTitle %}
     <title>{{ customTitle }}</title>
     {% seo title=false %}
@@ -51,7 +51,7 @@
     <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/gifffer/1.5.0/gifffer.min.js"></script>
     <script async defer src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
     <script async defer>
-        window.onload = function() {
+        window.onload = function () {
             Gifffer();
         }
     </script>
@@ -191,18 +191,18 @@
         }
 
         var initialScriptsList = [
-            {src: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', type: 'css'},
-            {src: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', type: 'css'},
-            {src: 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700', type: 'css'},
-            {src: '/js/jquery-2.2.0.min.js', type: 'script'},
-            {src: '/css/jquery-ui.min.css', type: 'css'},
-            {src: '/js/jquery-ui.min.js', type: 'script'},
-            {src: '/js/jquery.vide.js', type: 'script'},
-            {src: '/js/script.js', type: 'script'},
-            {src: '/css/photoswipe.css', type: 'css'},
-            {src: '/css/default-skin/default-skin.css', type: 'css'},
-            {src: '/js/photoswipe.min.js', type: 'script'},
-            {src: '/js/photoswipe-ui-default.min.js', type: 'script'}
+            { src: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', type: 'css' },
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', type: 'css' },
+            { src: 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700', type: 'css' },
+            { src: '/js/jquery-2.2.0.min.js', type: 'script' },
+            { src: '/css/jquery-ui.min.css', type: 'css' },
+            { src: '/js/jquery-ui.min.js', type: 'script' },
+            { src: '/js/jquery.vide.js', type: 'script' },
+            { src: '/js/script.js', type: 'script' },
+            { src: '/css/photoswipe.css', type: 'css' },
+            { src: '/css/default-skin/default-skin.css', type: 'css' },
+            { src: '/js/photoswipe.min.js', type: 'script' },
+            { src: '/js/photoswipe-ui-default.min.js', type: 'script' }
         ];
 
         loadNextScript(0, initialScriptsList);
@@ -274,8 +274,8 @@
                         ga(
                             "send", "event", "Outgoing Links", link,
                             document.location.pathname + document.location.search, {
-                                "hitCallback": hitBack
-                            }
+                            "hitCallback": hitBack
+                        }
                         );
 
                         setTimeout(hitBack, 1000);
@@ -287,11 +287,11 @@
         var _w = window;
         var _gaLtEvt = ("ontouchstart" in _w) ? "click" : "mousedown";
         _w.addEventListener ? _w.addEventListener("load", function () {
-                document.body.addEventListener(_gaLtEvt, _gaLt, !1)
-            }, !1)
+            document.body.addEventListener(_gaLtEvt, _gaLt, !1)
+        }, !1)
             : _w.attachEvent && _w.attachEvent("onload", function () {
-            document.body.attachEvent("on" + _gaLtEvt, _gaLt)
-        });
+                document.body.attachEvent("on" + _gaLtEvt, _gaLt)
+            });
     </script>
     <script async defer>
         (function (i, s, o, g, r, a, m) {
@@ -334,7 +334,7 @@
             let subMenuActive = false;
             menuElement.on('mouseleave', function (event) {
                 if (!$(event.relatedTarget).parents('div.sub-menu-container').length) {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         if (!submenuContainer.is(':hover')) {
                             subMenuActive = false;
                             submenuContainer.removeClass('active bounds-transition');
@@ -352,17 +352,17 @@
                     indicator.removeClass('left-transition');
                 }
             });
-            menuItems.each(function() {
-                let item = $( this );
+            menuItems.each(function () {
+                let item = $(this);
                 let subMenuId = item.attr('data-submenu-id');
                 item.on('mouseenter', function () {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         if (item.is(':hover')) {
                             let submenus = $('nav.head-menu > div.sub-menu-container > div');
                             submenus.css('display', 'none');
                             menuItems.removeClass('active');
                             item.addClass('active');
-                            let targetSubMenu = $('nav.head-menu > div.sub-menu-container > div#'+subMenuId);
+                            let targetSubMenu = $('nav.head-menu > div.sub-menu-container > div#' + subMenuId);
                             targetSubMenu.css('display', 'block');
                             submenuContainer.css('overflow', 'visible');
                             let offset = (item.outerWidth() - targetSubMenu.outerWidth()) / 2;
@@ -394,7 +394,7 @@
                 initMobileSubmenu();
             }
 
-            $(window).resize(function(){
+            $(window).resize(function () {
                 let newIsMobile = $('button.burger').css('display') === 'block';
                 if (isMobile !== newIsMobile) {
                     isMobile = newIsMobile;
@@ -406,15 +406,15 @@
                 }
             });
 
-            $( document ).ready(function() {
+            $(document).ready(function () {
                 // Rogue line numbers fix (don't show line numbers for 1 row)
-                $('.rouge-gutter.gl').each(function() {
+                $('.rouge-gutter.gl').each(function () {
                     var lineNumbers = $(this).children('.lineno');
                     if (lineNumbers.text() === '1\n') {
                         $(this).css('display', 'none');
                     }
                 });
-                $('a#use-cases-link').click(function(e) {
+                $('a#use-cases-link').click(function (e) {
                     let isMobile = $('button.burger').css('display') === 'block';
                     if (isMobile) {
                         e.preventDefault();
@@ -439,10 +439,10 @@
             submenuContainer.removeClass('active');
             submenuContainer.css('display', 'none');
 
-            targetSubMenus.each(function() {
-                let subMenu = $( this );
+            targetSubMenus.each(function () {
+                let subMenu = $(this);
                 let subMenuId = subMenu.attr('id');
-                let parent = $('nav.head-menu > ul > li.'+subMenuId);
+                let parent = $('nav.head-menu > ul > li.' + subMenuId);
                 parent.append(subMenu);
             });
         }
@@ -456,8 +456,8 @@
             submenuContainer.css('display', 'block');
             let menuItems = $('nav.head-menu > ul > li');
             menuItems.removeClass('active');
-            targetSubMenus.each(function() {
-                let subMenu = $( this );
+            targetSubMenus.each(function () {
+                let subMenu = $(this);
                 submenuContainer.append(subMenu);
             });
         }
@@ -465,7 +465,7 @@
         function listburg(subMenuId) {
             let isMobile = $('button.burger').css('display') === 'block';
             if (isMobile) {
-                let targetSubMenu = $('nav.head-menu > ul > li > div.centered-sub#'+subMenuId+' > ul.sub-menu');
+                let targetSubMenu = $('nav.head-menu > ul > li > div.centered-sub#' + subMenuId + ' > ul.sub-menu');
                 let isOpen = targetSubMenu.hasClass('open-sub');
                 let subMenus = $('nav.head-menu > ul > li > div.centered-sub > ul.sub-menu');
                 subMenus.removeClass('open-sub');
@@ -475,472 +475,772 @@
             }
         }
     </script>
+    <script async defer>
+        let toggleBlocksIdsToTocsIds = {};
+        jqueryDefer(function() {
+            $(document).ready(function() {
+                const blocks = [];
+                $('.tb-content-toggle').each(function(index, contentToggleItem) {
+                    blocks.push(contentToggleItem);
+                });
+
+                blocks.forEach(function(contentToggleItem) {
+                    toggleBlocksIdsToTocsIds[contentToggleItem.id] = {};
+                    initContentToggleHandler(contentToggleItem)
+                });
+            })
+        })
+
+        function onPopStateHandler(contentToggleItem) {
+            var params = Qs.parse(window.location.search, { ignoreQueryPrefix: true });
+            var targetId = params[contentToggleItem.id];
+            if (!targetId) {
+                const activeLinkItem = $(contentToggleItem).find('a.content-toggle-button.active')
+                if (activeLinkItem && activeLinkItem.attr("data-target")) {
+                    targetId = $(activeLinkItem).attr("data-target").substring(1);
+                } else {
+                    targetId = $(contentToggleItem).find('a.content-toggle-button').first().attr("data-target").substring(1);
+                }
+            }
+            selectTargetHandler(contentToggleItem, targetId);
+        }
+
+        function selectTargetHandler(contentToggleItem, targetId) {
+            for (let toggleBlockId in toggleBlocksIdsToTocsIds[contentToggleItem.id]) {
+                for (let tocid of toggleBlocksIdsToTocsIds[contentToggleItem.id][toggleBlockId]) {
+                    let tocItem = $('#' + tocid);
+                    if(tocItem && tocItem.parentNode) {
+                        if (contentToggleItem.id === targetId) {
+                            tocItem.parent().removeClass('hide');
+                            continue;
+                        }
+                        tocItem.parent().addClass('hide');
+                    }
+                }
+            }
+
+            $(".tb-content-toggle#" + contentToggleItem.id + " a.content-toggle-button").removeClass("active");
+            $(".tb-content-toggle#" + contentToggleItem.id + " a.content-toggle-button[data-target='#" + targetId + "']").addClass("active");
+            $(".tb-content-toggle#" + contentToggleItem.id + " .panel-collapse").removeClass("show");
+            $(".tb-content-toggle#" + contentToggleItem.id + " .panel-collapse#" + targetId).addClass("show");
+        }
+
+        function replaceHashWithHeading(id) {
+            const headers = $('#' + id).find(":header");
+            const filteredHeaders = $('#' + id).find('p');
+            const siblingParagraphs = $(filteredHeaders).map(function(idx, el) {
+                return $(el).nextAll('p:first');
+            });
+
+            $(siblingParagraphs).each(function() {
+                if ($(this).text().startsWith('##')) {
+                    const paragraph = $(this);
+                    const headerLevel = paragraph.text().split(' ')[0].length;
+                    const newHeader = $("<h" + headerLevel + ">").text(paragraph.text().replace(/^#+/, ''));
+                    newHeader.attr("id", newHeader.text().trim().split(' ').join('-').trim().toLowerCase());
+                    paragraph.replaceWith(newHeader);
+                }
+            });
+        }
+
+        function initContentToggleHandler(contentToggleItem) {
+            let toggleBlocksIds = [];
+            $('.panel-heading.' + contentToggleItem.id + ' > a').each(function() {
+                toggleBlocksIds.push($(this).attr("data-target").substring(1));
+            });
+            let i = 0;
+            for (let id of toggleBlocksIds) {
+                toggleBlocksIdsToTocsIds[contentToggleItem.id][id] = [];
+                $('#' + id).find(":header").each(function() {
+                    let heading = $(this);
+                    heading.attr("id", heading.attr("id") + i++);
+                    toggleBlocksIdsToTocsIds[contentToggleItem.id][id].push('markdown-toc-' + $(this).attr('id'));
+                });
+                replaceHashWithHeading(id);
+            }
+
+            window.addEventListener('popstate', function() {
+                onPopStateHandler(contentToggleItem);
+            });
+
+            onPopStateHandler(contentToggleItem);
+
+            $('.tb-content-toggle#' + contentToggleItem.id + ' a.content-toggle-button')
+                .each((idx,element) => parseButtons(element, contentToggleItem));
+
+            const firstId = Object.keys(toggleBlocksIdsToTocsIds[contentToggleItem.id])[0];
+
+            $('.tb-content-toggle#' + contentToggleItem.id + " a.content-toggle-button").removeClass("active");
+            $('.tb-content-toggle#' + contentToggleItem.id + " a.content-toggle-button[data-target='#" + firstId + "']").addClass("active");
+
+            $(".tb-content-toggle#" + contentToggleItem.id + " .panel-collapse").removeClass("show");
+            $(".tb-content-toggle#" + contentToggleItem.id + " .panel-collapse#" + firstId).addClass("show");
+        }
+
+        function parseButtons(element, contentToggleItem) {
+            element.addEventListener('click', function(event) {
+                event.preventDefault();
+                var id = element.getAttribute("data-target").substring(1);
+                var param = contentToggleItem.id;
+                var params = Qs.parse(window.location.search, { ignoreQueryPrefix: true });
+                params[param] = id;
+
+                var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + Qs.stringify(params);
+                if (window.location.hash) {
+                    newurl += window.location.hash;
+                }
+                window.history.pushState({ path: newurl }, '', newurl);
+                selectTargetHandler(contentToggleItem, id);
+            });
+        }
+    </script>
+    <script>
+        let innerToggleBlocksIds = [];
+        let innerToggleBlocksIdsToTocsIds = {};
+        let innerObserver;
+        let contentToggleInnerId;
+        let innerInitialId;
+        let isInnerFirstTime = true;
+
+        jqueryDefer(function () {
+            $(document).ready(function () {
+                const innerBlocks = [];
+                $('.inner-content-toggle').each(function (index, innerContentToggleItem) {
+                    innerBlocks.push(innerContentToggleItem);
+                });
+
+                innerBlocks.forEach(function (innerContentToggleItem) {
+                    innerToggleBlocksIdsToTocsIds[innerContentToggleItem.id] = {};
+                    initInnerContentToggleHandler(innerContentToggleItem);
+                });
+            });
+
+            function initInnerContentToggleHandler(innerContentToggleItem) {
+                contentToggleInnerId = innerContentToggleItem.id;
+                $(function () {
+                    if ($('.inner-panel-heading.' + contentToggleInnerId).length) {
+                        $('.inner-content-toggle#' + contentToggleInnerId + ' a.inner-content-toggle-button').each(function () {
+                            let item = $(this);
+                            if (!innerInitialId) innerInitialId = item.attr('id');
+                            innerToggleBlocksIds.push(item.attr('id'))
+                            item.click(function (event) {
+                                event.preventDefault();
+                                var id = $(this).attr('id');
+                                innerSwitchContent(id);
+                            })
+                        });
+
+                        if ($('#table-of-contents')) {
+                            const parentHeadingId = $('#' + contentToggleInnerId).closest('.tb-content-toggle').prevAll(':header:first').attr('id');
+                            const tocItem = $('#table-of-contents #markdown-toc-' + parentHeadingId);
+                            const headersArray = $('.inner-panel-heading.' + contentToggleInnerId);
+                            let i = 0;
+                            for (let id of innerToggleBlocksIds) {
+                                innerToggleBlocksIdsToTocsIds[contentToggleInnerId][id] = [];
+                                let ulElement = $('<ul>', { id: id });
+                                $('#' + id + '-block').find(':header').each(function () {
+                                    let headerElement = $(this);
+                                    let liElement = $('<li>');
+                                    let linkElement = $('<a>', { text: headerElement.text(), href: '#' + id + '-block', id: 'markdown-toc-' + id + i });
+                                    liElement.append(linkElement);
+                                    ulElement.append(liElement);
+                                });
+                                if ($(ulElement).length) {
+                                    tocItem.append(ulElement);
+                                }
+                            }
+                        }
+                        if (isInnerFirstTime) { innerSwitchContent(innerInitialId) }
+                    } else {
+                        setTimeout(function () {
+                            initInnerContentToggleHandler(innerContentToggleItem);
+                        }, 50);
+                    }
+                });
+            }
+
+            function innerCheckIsMutated(contentId) {
+                if (innerObserver) { innerObserver.disconnect() }
+                const targetNode = $('.inner-content-toggle#' + contentToggleInnerId).closest('.panel-collapse')[0];
+
+                if (targetNode) {
+                    innerObserver = new MutationObserver((mutationsList, innerObserver) => {
+                        for (const mutation of mutationsList) {
+                            if (mutation.attributeName === 'class' && mutation.target.classList.contains('show')) {
+                                $('ul#' + contentId).removeClass('hide');
+                                $('ul#' + contentId).addClass('show');
+                            } else {
+                                for (let id of innerToggleBlocksIds) {
+                                    $('ul#' + id).removeClass('show');
+                                    $('ul#' + id).addClass('hide');
+                                }
+                            }
+                        }
+                    });
+
+                    const config = { attributes: true, childList: false, subtree: false };
+
+                    innerObserver.observe(targetNode, config);
+                }
+            }
+
+            function innerSwitchContent(contentId) {
+                isInnerFirstTime = false;
+                for (let id of innerToggleBlocksIds) {
+                    $('ul#' + id).removeClass('show');
+                    $('ul#' + id).addClass('hide');
+                }
+
+                $('ul#' + contentId).removeClass('hide');
+                $('ul#' + contentId).addClass('show');
+
+                innerCheckIsMutated(contentId);
+
+                $(".inner-content-toggle#" + contentToggleInnerId + " a.inner-content-toggle-button").each(function () {
+                    let item = $(this);
+                    item.removeClass('active')
+                });
+                $(".inner-content-toggle#" + contentToggleInnerId + " a.inner-content-toggle-button#" + contentId).addClass("active");
+
+                $(".inner-content-toggle#" + contentToggleInnerId + " .inner-panel-collapse").each(function () {
+                    let item = $(this);
+                    item.removeClass('show');
+                    item.addClass("hide");
+                });
+                $(".inner-content-toggle#" + contentToggleInnerId + " .inner-panel-collapse#" + contentId + "-block").addClass("show").removeClass('hide');
+            }
+        })
+
+    </script>
+    <script async defer>
+        jqueryDefer(function () {
+            $(document).ready(function () {
+                const expandableCodeBlocks = [];
+                $('.copy-code').each(function (index, codeBlocksItem) {
+                    if (codeBlocksItem.classList) {
+                        for (var i = 0; i < codeBlocksItem.classList.length; i++) {
+                            if (codeBlocksItem.classList[i].startsWith("expandable-")) {
+                                expandableCodeBlocks.push(codeBlocksItem);
+                            }
+                        }
+                    }
+                });
+                expandableCodeBlocks.forEach(codeBlock => addExpandButton(codeBlock));
+            })
+        })
+
+        function addExpandButton(codeBlock) {
+            const pre = $(codeBlock).find('pre').first();
+            const classes = $(codeBlock).attr('class').split(' ');
+
+            const expandableClass = classes.find(className => className.startsWith('expandable'));
+
+            if (expandableClass) {
+                let rows = parseInt(expandableClass.split('-')[1]);
+                let collapsedHeight = rows * 28 + 5;
+                pre.css('height', collapsedHeight + 'px');
+                $(codeBlock).find('.highlight').first().css("margin-bottom", "45px");
+
+                let button = $('<button class="expand-code-btn"><div class="collapsed"></div><p>expand</p></button>');
+
+                button.on('click', function () {
+                    if (button.attr('data-expanded') === 'true') {
+                        pre.css('height', collapsedHeight + 'px');
+                        button.attr('data-expanded', 'false');
+                        button.find('p').text('expand');
+                        button.get(0).scrollIntoView({ block: "center" });
+                        button.find('div').removeClass('expanded');
+                        button.find('div').addClass('collapsed');
+                    } else {
+                        if (pre.prop('scrollHeight') > 2775) {
+                            $(codeBlock).find('.rouge-gutter').css("width", "60px");
+                        }
+                        pre.css('height', pre.prop('scrollHeight') + 'px');
+                        button.attr('data-expanded', 'true');
+                        button.find('p').text('collapse');
+                        button.find('div').removeClass('collapsed');
+                        button.find('div').addClass('expanded');
+                    }
+                });
+                if (!$(codeBlock).find('button.expand-code-btn')) {
+                    $(codeBlock).append(button);
+                }
+            }
+        }
+
+    </script>
 </head>
+
 <body>
-<header>
-    <div class="logo-burger">
-        <a href="/support-ukraine/" class="support-ukraine">
-            <p><i class="fa fa-ban"></i>Stop the war</p>
-            <img src="/images/animated-ukraine-flag.gif" alt="Stand with Ukraine flag">
-            <p>Support Ukraine</p>
-        </a>
-        <a href="/" class="logo" aria-label="Link to homepage"></a>
-        <button onclick="Burger()" class="burger"  aria-label="Burger menu"></button>
-        <div id="githubButtonContainer">
-            <a class="github-button" href="{{ githubLink }}" data-show-count="true"
-               aria-label="{{ githubLabel }}">Star</a>
-        </div>
-    </div>
-    <nav class="head-menu">
-        <ul>
-            <li class="nav-products" data-submenu-id="nav-products">
-                <span class="main-menu-link" onclick="listburg('nav-products')">Products</span>
-            </li>
-            <li class="nav-services" data-submenu-id="nav-services">
-                <span class="main-menu-link" onclick="listburg('nav-services')">Services</span>
-            </li>
-            <li class="nav-cases" data-submenu-id="nav-cases">
-                <a class="main-menu-link" id="use-cases-link" href="/iot-use-cases/" style="cursor: pointer;">Use Cases</a>
-            </li>
-            <li class="nav-customers" data-submenu-id="nav-customers">
-                <span class="main-menu-link" onclick="listburg('nav-customers')">Customers</span>
-            </li>
-            <li class="nav-company" data-submenu-id="nav-company">
-                <span class="main-menu-link" onclick="listburg('nav-company')">Company</span>
-            </li>
-            <li class="nav-partners" data-submenu-id="nav-partners">
-                <span class="main-menu-link" onclick="listburg('nav-partners')">Partners</span>
-            </li>
-            <li class="nav-docs" data-submenu-id="nav-docs">
-                <span class="main-menu-link" onclick="listburg('nav-docs')">Docs</span>
-            </li>
-            <div class="indicator"><div class="head-arrow"></div><div class="line"></div><div class="sub-background"></div></div>
-        </ul>
-        <div class="sub-menu-container">
-            <div id="nav-products" class="centered-sub">
-                <ul class="sub-menu products">
-                    <li class="sub-groups">
-                        <div class="group">
-                            <p class="group-name">IoT platforms</p>
-                            <a class="com-lnk" href="/">
-                                <img src="/images/thingsboard-cm-icon.svg" alt="Community Edition icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Community Edition</span>
-                                    <p>Open source platform</p>
-                                </div>
-                            </a>
-                            <a class="prof-lnk" href="/products/thingsboard-pe/">
-                                <img src="/images/thingsboard-p-icon.svg" alt="Professional Edition icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Professional Edition</span>
-                                    <p>Advanced IoT platform</p>
-                                </div>
-                            </a>
-                            <a class="cloud-lnk" href="/products/paas/">
-                                <img src="/images/thingsboard-c-icon.svg" alt="Cloud icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Cloud</span>
-                                    <p>Platform as a service</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <p class="group-name">Product ecosystem</p>
-                            <a class="edge-lnk" href="/products/thingsboard-edge/">
-                                <img src="/images/thingsboard-e-icon.svg" alt="Edge icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Edge</span>
-                                    <p>Edge computing</p>
-                                </div>
-                            </a>
-                            <a class="gateway-lnk" href="/docs/iot-gateway/what-is-iot-gateway/">
-                                <img src="/images/gateway-icon.svg" alt="IoT Gateway icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">IoT Gateway</span>
-                                    <p>Connect legacy protocols</p>
-                                </div>
-                            </a>
-                            <a class="mqtt-broker-lnk" href="/docs/mqtt-broker/">
-                                <img src="/images/tbmq-icon.svg" alt="MQTT Broker icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">MQTT Broker</span>
-                                    <p>Connect MQTT clients</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <p class="group-name">&nbsp;</p>
-                            <a class="trendz-lnk" href="/products/trendz/">
-                                <img src="/images/trendz-icon.svg" alt="Trendz Analytics icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Trendz Analytics</span>
-                                    <p>Data analytics and Prediction</p>
-                                </div>
-                            </a>
-                            <a class="mobile-lnk" href="/products/mobile/">
-                                <img src="/images/tb-mobile-icon.svg" alt="Device icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Mobile Application</span>
-                                    <p>IoT mobile product</p>
-                                </div>
-                            </a>
-                            <a class="mobile-pe-lnk" href="/products/mobile-pe/">
-                                <img src="/images/tb-pe-mobile-icon.svg" alt="PE Mobile Application icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">PE Mobile Application</span>
-                                    <p>Advanced IoT mobile product</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav-services" class="centered-sub">
-                <ul class="sub-menu services">
-                    <li class="sub-groups">
-                        <div class="group">
-                            <a href="/docs/services/development-services/">
-                                <img src="/images/development-services.svg" alt="Development services icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Development services</span>
-                                    <p>Customization and complete IoT Solutions development</p>
-                                </div>
-                            </a>
-                            <a href="/docs/services/support/">
-                                <img src="/images/support-icon.svg" alt="Support icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Support</span>
-                                    <p>Support packages</p>
-                                </div>
-                            </a>
-                            <a href="/docs/services/trainings/">
-                                <img src="/images/train-icon.svg" alt="Trainings icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Trainings</span>
-                                    <p>ThingsBoard education courses</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a href="/iot-solutions/">
-                                <img src="/images/iot-solutions.svg" alt="IoT solutions icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">IoT Solutions</span>
-                                    <p>Overview of IoT Solutions and Applications</p>
-                                </div>
-                            </a>
-                            <a href="/device-management/">
-                                <img src="/images/device-management.svg" alt="Device management icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Device management</span>
-                                    <p>Streamline Your IoT Device Operations</p>
-                                </div>
-                            </a>
-                            <a href="/monitoring-dashboard/">
-                                <img src="/images/monitoring-dashboard.svg" alt="Monitoring dashboard icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Monitoring dashboard</span>
-                                    <p>Visualizing IoT Data on Live Dashboards</p>
-                                </div>
-                            </a>
-                            <a href="/asset-management">
-                                <img src="/images/asset-management.svg" alt="Asset management icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Asset Management</span>
-                                    <p>IoT Asset Tracking and inventory management</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav-docs" class="centered-sub">
-                <ul class="sub-menu products">
-                    <li class="sub-groups">
-                        <div class="group">
-                            <p class="group-name">IoT platforms</p>
-                            <a class="com-lnk" href="/docs/">
-                                <img src="/images/thingsboard-cm-icon.svg" alt="Community Edition icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Community Edition</span>
-                                    <p>Open source platform</p>
-                                </div>
-                            </a>
-                            <a class="prof-lnk" href="/docs/pe/">
-                                <img src="/images/thingsboard-p-icon.svg" alt="Professional Edition icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Professional Edition</span>
-                                    <p>Advanced IoT platform</p>
-                                </div>
-                            </a>
-                            <a class="cloud-lnk" href="/docs/paas/">
-                                <img src="/images/thingsboard-c-icon.svg" alt="Cloud icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Cloud</span>
-                                    <p>Platform as a service</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <p class="group-name">Product ecosystem</p>
-                            <a class="edge-lnk" href="/docs/edge/">
-                                <img src="/images/thingsboard-e-icon.svg" alt="Edge icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Edge</span>
-                                    <p>Edge computing</p>
-                                </div>
-                            </a>
-                            <a class="gateway-lnk" href="/docs/iot-gateway/">
-                                <img src="/images/gateway-icon.svg" alt="IoT Gateway icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">IoT Gateway</span>
-                                    <p>Connect legacy protocols</p>
-                                </div>
-                            </a>
-                            <a class="mqtt-broker-lnk" href="/docs/mqtt-broker/">
-                                <img src="/images/tbmq-icon.svg" alt="MQTT Broker icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">MQTT Broker</span>
-                                    <p>Connect MQTT clients</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <p class="group-name">&nbsp;</p>
-                            <a class="trendz-lnk" href="/docs/trendz/">
-                                <img src="/images/trendz-icon.svg" alt="Trendz Analytics icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Trendz Analytics</span>
-                                    <p>Data analytics and Prediction</p>
-                                </div>
-                            </a>
-                            <a class="mobile-lnk" href="/docs/mobile/">
-                                <img src="/images/tb-mobile-icon.svg" alt="Device icon icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Mobile Application</span>
-                                    <p>IoT mobile product</p>
-                                </div>
-                            </a>
-                            <a class="mobile-pe-lnk" href="/docs/pe/mobile/">
-                                <img src="/images/tb-pe-mobile-icon.svg" alt="PE Mobile Application icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">PE Mobile Application</span>
-                                    <p>Advanced IoT mobile product</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav-cases" class="centered-sub">
-                <ul class="sub-menu cases">
-                    <li class="sub-groups">
-                        <div class="group">
-                            <a href="/smart-energy/">
-                                <img src="/images/case-eng-icon.svg" alt="Smart Energy icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Energy</span>
-                                    <p>Energy monitoring and efficiency analysis</p>
-                                </div>
-                            </a>
-                            <a href="/smart-farming/">
-                                <img src="/images/case-fam-icon.svg" alt="Smart Farming icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Farming</span>
-                                    <p>Remote soil, products and equipment monitoring</p>
-                                </div>
-                            </a>
-                            <a href="/fleet-tracking/">
-                                <img src="/images/case-trk-icon.svg" alt="Fleet Tracking icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Fleet Tracking</span>
-                                    <p>Fleet tracking and fleet management</p>
-                                </div>
-                            </a>
-                            <a href="/smart-metering/">
-                                <img src="/images/case-met-icon.svg" alt="Smart Metering icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Metering</span>
-                                    <p>Collection, analysis and visualization of data from meters</p>
-                                </div>
-                            </a>
-                            <a href="/use-cases/air-quality-monitoring/">
-                                <img src="/images/case-aq-icon.svg" alt="Air Quality Monitoring icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Air Quality Monitoring</span>
-                                    <p>Monitor outdoor air quality using a wide range of sensors</p>
-                                </div>
-                            </a>
-                            <a href="/use-cases/waste-management/">
-                                <img src="/images/case-waste-icon.svg" alt="Waste Managemen icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Waste Management</span>
-                                    <p>Real-time waste management for streamlined processes</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a href="/use-cases/environment-monitoring/">
-                                <img src="/images/case-env-icon.svg" alt="Environment Monitoring icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Environment Monitoring</span>
-                                    <p>Monitor and analyze indoor and outdoor environments</p>
-                                </div>
-                            </a>
-                            <a href="/use-cases/smart-office/">
-                                <img src="/images/case-off-icon.svg" alt="Smart Office icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Office</span>
-                                    <p>Increase productivity and optimize resource consumption</p>
-                                </div>
-                            </a>
-                            <a href="/use-cases/water-metering/">
-                                <img src="/images/case-wat-icon.svg" alt="Water Metering icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Water Metering</span>
-                                    <p>Water consumption analysis and fraud detection</p>
-                                </div>
-                            </a>
-                            <a href="/use-cases/smart-retail/">
-                                <img src="/images/case-ret-icon.svg" alt="Smart Retail icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Retail</span>
-                                    <p>Control quality of food storage, indoor environment and safety</p>
-                                </div>
-                            </a>
-                            <a href="/use-cases/smart-irrigation/">
-                                <img src="/images/smart-irrigation.svg" alt="Smart Irrigation icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Irrigation</span>
-                                    <p>Soil moisture monitoring and irrigation control</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav-customers" class="centered-sub">
-                <ul class="sub-menu customers">
-                    <li class="sub-groups">
-                        <div class="group">
-                            <a class="small-link" href="/industries/smart-energy/">
-                                <img src="/images/se-s-icon.svg" alt="Smart Energy icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Energy</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/industries/agriculture/">
-                                <img src="/images/agr-s-icon.svg" alt="Agriculture icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Agriculture</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/industries/telecom/">
-                                <img src="/images/tel-s-icon.svg" alt="Telecom icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Telecom</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/industries/warehouse-monitoring/">
-                                <img src="/images/sb-s-icon.svg" alt="Warehouse Monitoring icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Warehouse Monitoring</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a class="small-link" href="/industries/smart-city/">
-                                <img src="/images/sc-s-icon.svg" alt="Smart City icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart City</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/industries/smart-buildings/">
-                                <img src="/images/sb-s-icon.svg" alt="Smart Buildings icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Smart Buildings</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/industries/industry40/">
-                                <img src="/images/in-s-icon.svg" alt="Industry 4.0 icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Industry 4.0</span>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav-company" class="centered-sub">
-                <ul class="sub-menu about">
-                    <li class="sub-groups">
-                        <div class="group">
-                            <a class="small-link" href="/company/">
-                                <img src="/images/about-s-icon.svg" alt="About Our Company icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Our Company</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/docs/contact-us/">
-                                <img src="/images/contact-s-icon.svg" alt="Contact Us icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Contact Us</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/careers/">
-                                <img src="/images/careers-s-icon.svg" alt="Careers icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Careers</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a class="small-link" href="/mediakit/">
-                                <img src="/images/media-s-icon.svg" alt="Media Kit icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Media Kit</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="https://blog.thingsboard.io/">
-                                <img src="/images/blog-s-icon.svg" alt="Blog icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Blog</span>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav-partners" class="centered-sub">
-                <ul class="sub-menu about">
-                    <li class="sub-groups">
-                        <div class="group">
-                            <a class="small-link" href="/partners/hardware/">
-                                <img src="/images/hard-s-icon.svg" alt="Hardware partners icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Hardware partners</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/partners/distributors/">
-                                <img src="/images/dis-s-icon.svg" alt="Distributors icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Distributors</span>
-                                </div>
-                            </a>
-                            <a class="small-link" href="/partners/marketplace/">
-                                <img src="/images/marketplace-s-icon.svg" alt="Marketplace icon">
-                                <div class="sub-text">
-                                    <span class="item-heading">Marketplace</span>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+    <header>
+        <div class="logo-burger">
+            <a href="/support-ukraine/" class="support-ukraine">
+                <p><i class="fa fa-ban"></i>Stop the war</p>
+                <img src="/images/animated-ukraine-flag.gif" alt="Stand with Ukraine flag">
+                <p>Support Ukraine</p>
+            </a>
+            <a href="/" class="logo" aria-label="Link to homepage"></a>
+            <button onclick="Burger()" class="burger" aria-label="Burger menu"></button>
+            <div id="githubButtonContainer">
+                <a class="github-button" href="{{ githubLink }}" data-show-count="true"
+                    aria-label="{{ githubLabel }}">Star</a>
             </div>
         </div>
-    </nav>
-    <div>
-        <a href="/installations/" class="n-button try">Try it now</a>
-        <a href="/pricing/" class="n-button price">Pricing</a>
-    </div>
-</header>
+        <nav class="head-menu">
+            <ul>
+                <li class="nav-products" data-submenu-id="nav-products">
+                    <span class="main-menu-link" onclick="listburg('nav-products')">Products</span>
+                </li>
+                <li class="nav-services" data-submenu-id="nav-services">
+                    <span class="main-menu-link" onclick="listburg('nav-services')">Services</span>
+                </li>
+                <li class="nav-cases" data-submenu-id="nav-cases">
+                    <a class="main-menu-link" id="use-cases-link" href="/iot-use-cases/" style="cursor: pointer;">Use
+                        Cases</a>
+                </li>
+                <li class="nav-customers" data-submenu-id="nav-customers">
+                    <span class="main-menu-link" onclick="listburg('nav-customers')">Customers</span>
+                </li>
+                <li class="nav-company" data-submenu-id="nav-company">
+                    <span class="main-menu-link" onclick="listburg('nav-company')">Company</span>
+                </li>
+                <li class="nav-partners" data-submenu-id="nav-partners">
+                    <span class="main-menu-link" onclick="listburg('nav-partners')">Partners</span>
+                </li>
+                <li class="nav-docs" data-submenu-id="nav-docs">
+                    <span class="main-menu-link" onclick="listburg('nav-docs')">Docs</span>
+                </li>
+                <div class="indicator">
+                    <div class="head-arrow"></div>
+                    <div class="line"></div>
+                    <div class="sub-background"></div>
+                </div>
+            </ul>
+            <div class="sub-menu-container">
+                <div id="nav-products" class="centered-sub">
+                    <ul class="sub-menu products">
+                        <li class="sub-groups">
+                            <div class="group">
+                                <p class="group-name">IoT platforms</p>
+                                <a class="com-lnk" href="/">
+                                    <img src="/images/thingsboard-cm-icon.svg" alt="Community Edition icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Community Edition</span>
+                                        <p>Open source platform</p>
+                                    </div>
+                                </a>
+                                <a class="prof-lnk" href="/products/thingsboard-pe/">
+                                    <img src="/images/thingsboard-p-icon.svg" alt="Professional Edition icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Professional Edition</span>
+                                        <p>Advanced IoT platform</p>
+                                    </div>
+                                </a>
+                                <a class="cloud-lnk" href="/products/paas/">
+                                    <img src="/images/thingsboard-c-icon.svg" alt="Cloud icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Cloud</span>
+                                        <p>Platform as a service</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <p class="group-name">Product ecosystem</p>
+                                <a class="edge-lnk" href="/products/thingsboard-edge/">
+                                    <img src="/images/thingsboard-e-icon.svg" alt="Edge icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Edge</span>
+                                        <p>Edge computing</p>
+                                    </div>
+                                </a>
+                                <a class="gateway-lnk" href="/docs/iot-gateway/what-is-iot-gateway/">
+                                    <img src="/images/gateway-icon.svg" alt="IoT Gateway icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">IoT Gateway</span>
+                                        <p>Connect legacy protocols</p>
+                                    </div>
+                                </a>
+                                <a class="mqtt-broker-lnk" href="/docs/mqtt-broker/">
+                                    <img src="/images/tbmq-icon.svg" alt="MQTT Broker icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">MQTT Broker</span>
+                                        <p>Connect MQTT clients</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <p class="group-name">&nbsp;</p>
+                                <a class="trendz-lnk" href="/products/trendz/">
+                                    <img src="/images/trendz-icon.svg" alt="Trendz Analytics icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Trendz Analytics</span>
+                                        <p>Data analytics and Prediction</p>
+                                    </div>
+                                </a>
+                                <a class="mobile-lnk" href="/products/mobile/">
+                                    <img src="/images/tb-mobile-icon.svg" alt="Device icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Mobile Application</span>
+                                        <p>IoT mobile product</p>
+                                    </div>
+                                </a>
+                                <a class="mobile-pe-lnk" href="/products/mobile-pe/">
+                                    <img src="/images/tb-pe-mobile-icon.svg" alt="PE Mobile Application icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">PE Mobile Application</span>
+                                        <p>Advanced IoT mobile product</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav-services" class="centered-sub">
+                    <ul class="sub-menu services">
+                        <li class="sub-groups">
+                            <div class="group">
+                                <a href="/docs/services/development-services/">
+                                    <img src="/images/development-services.svg" alt="Development services icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Development services</span>
+                                        <p>Customization and complete IoT Solutions development</p>
+                                    </div>
+                                </a>
+                                <a href="/docs/services/support/">
+                                    <img src="/images/support-icon.svg" alt="Support icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Support</span>
+                                        <p>Support packages</p>
+                                    </div>
+                                </a>
+                                <a href="/docs/services/trainings/">
+                                    <img src="/images/train-icon.svg" alt="Trainings icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Trainings</span>
+                                        <p>ThingsBoard education courses</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a href="/iot-solutions/">
+                                    <img src="/images/iot-solutions.svg" alt="IoT solutions icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">IoT Solutions</span>
+                                        <p>Overview of IoT Solutions and Applications</p>
+                                    </div>
+                                </a>
+                                <a href="/device-management/">
+                                    <img src="/images/device-management.svg" alt="Device management icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Device management</span>
+                                        <p>Streamline Your IoT Device Operations</p>
+                                    </div>
+                                </a>
+                                <a href="/monitoring-dashboard/">
+                                    <img src="/images/monitoring-dashboard.svg" alt="Monitoring dashboard icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Monitoring dashboard</span>
+                                        <p>Visualizing IoT Data on Live Dashboards</p>
+                                    </div>
+                                </a>
+                                <a href="/asset-management">
+                                    <img src="/images/asset-management.svg" alt="Asset management icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Asset Management</span>
+                                        <p>IoT Asset Tracking and inventory management</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav-docs" class="centered-sub">
+                    <ul class="sub-menu products">
+                        <li class="sub-groups">
+                            <div class="group">
+                                <p class="group-name">IoT platforms</p>
+                                <a class="com-lnk" href="/docs/">
+                                    <img src="/images/thingsboard-cm-icon.svg" alt="Community Edition icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Community Edition</span>
+                                        <p>Open source platform</p>
+                                    </div>
+                                </a>
+                                <a class="prof-lnk" href="/docs/pe/">
+                                    <img src="/images/thingsboard-p-icon.svg" alt="Professional Edition icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Professional Edition</span>
+                                        <p>Advanced IoT platform</p>
+                                    </div>
+                                </a>
+                                <a class="cloud-lnk" href="/docs/paas/">
+                                    <img src="/images/thingsboard-c-icon.svg" alt="Cloud icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Cloud</span>
+                                        <p>Platform as a service</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <p class="group-name">Product ecosystem</p>
+                                <a class="edge-lnk" href="/docs/edge/">
+                                    <img src="/images/thingsboard-e-icon.svg" alt="Edge icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Edge</span>
+                                        <p>Edge computing</p>
+                                    </div>
+                                </a>
+                                <a class="gateway-lnk" href="/docs/iot-gateway/">
+                                    <img src="/images/gateway-icon.svg" alt="IoT Gateway icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">IoT Gateway</span>
+                                        <p>Connect legacy protocols</p>
+                                    </div>
+                                </a>
+                                <a class="mqtt-broker-lnk" href="/docs/mqtt-broker/">
+                                    <img src="/images/tbmq-icon.svg" alt="MQTT Broker icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">MQTT Broker</span>
+                                        <p>Connect MQTT clients</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <p class="group-name">&nbsp;</p>
+                                <a class="trendz-lnk" href="/docs/trendz/">
+                                    <img src="/images/trendz-icon.svg" alt="Trendz Analytics icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Trendz Analytics</span>
+                                        <p>Data analytics and Prediction</p>
+                                    </div>
+                                </a>
+                                <a class="mobile-lnk" href="/docs/mobile/">
+                                    <img src="/images/tb-mobile-icon.svg" alt="Device icon icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Mobile Application</span>
+                                        <p>IoT mobile product</p>
+                                    </div>
+                                </a>
+                                <a class="mobile-pe-lnk" href="/docs/pe/mobile/">
+                                    <img src="/images/tb-pe-mobile-icon.svg" alt="PE Mobile Application icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">PE Mobile Application</span>
+                                        <p>Advanced IoT mobile product</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav-cases" class="centered-sub">
+                    <ul class="sub-menu cases">
+                        <li class="sub-groups">
+                            <div class="group">
+                                <a href="/smart-energy/">
+                                    <img src="/images/case-eng-icon.svg" alt="Smart Energy icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Energy</span>
+                                        <p>Energy monitoring and efficiency analysis</p>
+                                    </div>
+                                </a>
+                                <a href="/smart-farming/">
+                                    <img src="/images/case-fam-icon.svg" alt="Smart Farming icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Farming</span>
+                                        <p>Remote soil, products and equipment monitoring</p>
+                                    </div>
+                                </a>
+                                <a href="/fleet-tracking/">
+                                    <img src="/images/case-trk-icon.svg" alt="Fleet Tracking icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Fleet Tracking</span>
+                                        <p>Fleet tracking and fleet management</p>
+                                    </div>
+                                </a>
+                                <a href="/smart-metering/">
+                                    <img src="/images/case-met-icon.svg" alt="Smart Metering icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Metering</span>
+                                        <p>Collection, analysis and visualization of data from meters</p>
+                                    </div>
+                                </a>
+                                <a href="/use-cases/air-quality-monitoring/">
+                                    <img src="/images/case-aq-icon.svg" alt="Air Quality Monitoring icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Air Quality Monitoring</span>
+                                        <p>Monitor outdoor air quality using a wide range of sensors</p>
+                                    </div>
+                                </a>
+                                <a href="/use-cases/waste-management/">
+                                    <img src="/images/case-waste-icon.svg" alt="Waste Managemen icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Waste Management</span>
+                                        <p>Real-time waste management for streamlined processes</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a href="/use-cases/environment-monitoring/">
+                                    <img src="/images/case-env-icon.svg" alt="Environment Monitoring icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Environment Monitoring</span>
+                                        <p>Monitor and analyze indoor and outdoor environments</p>
+                                    </div>
+                                </a>
+                                <a href="/use-cases/smart-office/">
+                                    <img src="/images/case-off-icon.svg" alt="Smart Office icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Office</span>
+                                        <p>Increase productivity and optimize resource consumption</p>
+                                    </div>
+                                </a>
+                                <a href="/use-cases/water-metering/">
+                                    <img src="/images/case-wat-icon.svg" alt="Water Metering icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Water Metering</span>
+                                        <p>Water consumption analysis and fraud detection</p>
+                                    </div>
+                                </a>
+                                <a href="/use-cases/smart-retail/">
+                                    <img src="/images/case-ret-icon.svg" alt="Smart Retail icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Retail</span>
+                                        <p>Control quality of food storage, indoor environment and safety</p>
+                                    </div>
+                                </a>
+                                <a href="/use-cases/smart-irrigation/">
+                                    <img src="/images/smart-irrigation.svg" alt="Smart Irrigation icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Irrigation</span>
+                                        <p>Soil moisture monitoring and irrigation control</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav-customers" class="centered-sub">
+                    <ul class="sub-menu customers">
+                        <li class="sub-groups">
+                            <div class="group">
+                                <a class="small-link" href="/industries/smart-energy/">
+                                    <img src="/images/se-s-icon.svg" alt="Smart Energy icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Energy</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/industries/agriculture/">
+                                    <img src="/images/agr-s-icon.svg" alt="Agriculture icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Agriculture</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/industries/telecom/">
+                                    <img src="/images/tel-s-icon.svg" alt="Telecom icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Telecom</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/industries/warehouse-monitoring/">
+                                    <img src="/images/sb-s-icon.svg" alt="Warehouse Monitoring icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Warehouse Monitoring</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a class="small-link" href="/industries/smart-city/">
+                                    <img src="/images/sc-s-icon.svg" alt="Smart City icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart City</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/industries/smart-buildings/">
+                                    <img src="/images/sb-s-icon.svg" alt="Smart Buildings icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Smart Buildings</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/industries/industry40/">
+                                    <img src="/images/in-s-icon.svg" alt="Industry 4.0 icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Industry 4.0</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav-company" class="centered-sub">
+                    <ul class="sub-menu about">
+                        <li class="sub-groups">
+                            <div class="group">
+                                <a class="small-link" href="/company/">
+                                    <img src="/images/about-s-icon.svg" alt="About Our Company icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Our Company</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/docs/contact-us/">
+                                    <img src="/images/contact-s-icon.svg" alt="Contact Us icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Contact Us</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/careers/">
+                                    <img src="/images/careers-s-icon.svg" alt="Careers icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Careers</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a class="small-link" href="/mediakit/">
+                                    <img src="/images/media-s-icon.svg" alt="Media Kit icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Media Kit</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="https://blog.thingsboard.io/">
+                                    <img src="/images/blog-s-icon.svg" alt="Blog icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Blog</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav-partners" class="centered-sub">
+                    <ul class="sub-menu about">
+                        <li class="sub-groups">
+                            <div class="group">
+                                <a class="small-link" href="/partners/hardware/">
+                                    <img src="/images/hard-s-icon.svg" alt="Hardware partners icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Hardware partners</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/partners/distributors/">
+                                    <img src="/images/dis-s-icon.svg" alt="Distributors icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Distributors</span>
+                                    </div>
+                                </a>
+                                <a class="small-link" href="/partners/marketplace/">
+                                    <img src="/images/marketplace-s-icon.svg" alt="Marketplace icon">
+                                    <div class="sub-text">
+                                        <span class="item-heading">Marketplace</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <a href="/installations/" class="n-button try">Try it now</a>
+            <a href="/pricing/" class="n-button price">Pricing</a>
+        </div>
+    </header>
