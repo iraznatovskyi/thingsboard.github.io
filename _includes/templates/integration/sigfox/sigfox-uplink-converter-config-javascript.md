@@ -73,6 +73,6 @@ function decodeToJson(payload) {
 
 return result;
 ```
-{: .copy-code.expandable-10}
+{: .copy-code}
 
 ![image](/images/user-guide/integrations/sigfox/sigfox-uplink-converter-java-pe.png)

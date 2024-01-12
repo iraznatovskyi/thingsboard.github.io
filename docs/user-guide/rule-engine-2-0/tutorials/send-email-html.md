@@ -66,7 +66,7 @@ At first, lets create and configure "to email" node.
 Example of HTML page%,%loriot-account%,%templates/rule-nodes/to-email-node/html-page.md%br%
 Example of HTML with image%,%basic-credential%,%templates/rule-nodes/to-email-node/html-image.md{% endcapture %}
 
-{% include content-toggle.liquid content-toggle-id="bodyTemplateExamples" toggle-spec=bodyTemplateExamples %}
+{% include content-toggle.html content-toggle-id="bodyTemplateExamples" toggle-spec=bodyTemplateExamples %}
 
 #### Configuring generator
 At the second stage, let's configure the "generator" node:
@@ -101,12 +101,3 @@ We got the next message:
 ## Next steps
 
 {% assign currentGuide = "DataProcessing" %}{% include templates/guides-banner.md %}
-
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-{% capture contenttogglespec %}
-Linux & Mac OS%,%linuxmacos%,%templates/mqtt-broker/install/linux-macos/linux-macos.md%br%
-Windows%,%windows%,%templates/mqtt-broker/install/windows/windows.md{% endcapture %}
-
-{% include content-toggle.liquid content-toggle-id="tbmqGettingStartedInstallation" toggle-spec=contenttogglespec %}
-
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
