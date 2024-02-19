@@ -849,6 +849,8 @@ var pushmenu = (function(){
 	};
 })();
 
+// toc-toggle
+
 (function () {
 	let toggleBlocksIdsToTocsIds = {};
 	jqueryDefer(function() {
@@ -862,18 +864,6 @@ var pushmenu = (function(){
 				toggleBlocksIdsToTocsIds[contentToggleItem.id] = {};
 				initContentToggleHandler(contentToggleItem)
 			});
-
-			const expandableCodeBlocks = [];
-			$('.copy-code').each(function (index, codeBlocksItem) {
-				if (codeBlocksItem.classList) {
-					for (var i = 0; i < codeBlocksItem.classList.length; i++) {
-						if (codeBlocksItem.classList[i].startsWith("expandable-")) {
-							expandableCodeBlocks.push(codeBlocksItem);
-						}
-					}
-				}
-			});
-			expandableCodeBlocks.forEach(codeBlock => addExpandButton(codeBlock));
 		})
 	});
 
@@ -881,7 +871,7 @@ var pushmenu = (function(){
 		var params = Qs.parse(window.location.search, { ignoreQueryPrefix: true });
 		var targetId = params[contentToggleItem.id];
 		if (!targetId) {
-			const activeLinkItem = $(contentToggleItem).find('a.content-toggle-button.active')
+			const activeLinkItem = $(contentToggleItem).find('a.content-toggle-button.active:first')
 			if (activeLinkItem && activeLinkItem.attr("data-target")) {
 				targetId = $(activeLinkItem).attr("data-target").substring(1);
 			} else {
@@ -905,8 +895,8 @@ var pushmenu = (function(){
 			}
 		}
 
-		$(".tb-content-toggle#" + contentToggleItem.id + " ." + contentToggleItem.id + " > a.content-toggle-button").removeClass("active");
-		$(".tb-content-toggle#" + contentToggleItem.id + " ." + contentToggleItem.id + " > a.content-toggle-button[data-target='#" + targetId + "']").addClass("active");
+		$('.tb-content-toggle#' + contentToggleItem.id + ' > .panel > .panel-heading > a.content-toggle-button').removeClass("active");
+		$(".tb-content-toggle#" + contentToggleItem.id + " > .panel > .panel-heading > a.content-toggle-button[data-target='#" + targetId + "']").addClass("active");
 		$(".tb-content-toggle#" + contentToggleItem.id +  " > .panel > .panel-collapse").removeClass("show");
 		$(".tb-content-toggle#" + contentToggleItem.id +  " > .panel > .panel-collapse#" + targetId).addClass("show");
 	}
@@ -931,7 +921,7 @@ var pushmenu = (function(){
 
 	function initContentToggleHandler(contentToggleItem) {
 		let toggleBlocksIds = [];
-		$('.panel-heading.' + contentToggleItem.id + ' > a').each(function() {
+		$('#' + contentToggleItem.id + ' > .panel .panel-heading > a.content-toggle-button').each(function() {
 			toggleBlocksIds.push($(this).attr("data-target").substring(1));
 		});
 		let i = 0;
@@ -951,13 +941,13 @@ var pushmenu = (function(){
 
 		onPopStateHandler(contentToggleItem);
 
-		$('.tb-content-toggle#' + contentToggleItem.id + ' .' + contentToggleItem.id + ' > a.content-toggle-button')
+		$('.tb-content-toggle#' + contentToggleItem.id + ' > .panel > .panel-heading > a.content-toggle-button')
 			.each((idx,element) => parseButtons(element, contentToggleItem));
 
 		const firstId = Object.keys(toggleBlocksIdsToTocsIds[contentToggleItem.id])[0];
 
-		$('.tb-content-toggle#' + contentToggleItem.id + " ." + contentToggleItem.id + " >  a.content-toggle-button").removeClass("active");
-		$('.tb-content-toggle#' + contentToggleItem.id + " ." + contentToggleItem.id + " > a.content-toggle-button[data-target='#" + firstId + "']").addClass("active");
+		$('.tb-content-toggle#' + contentToggleItem.id + ' > .panel > .panel-heading > a.content-toggle-button').removeClass("active");
+		$(".tb-content-toggle#" + contentToggleItem.id + " > .panel > .panel-heading > a.content-toggle-button[data-target='#" + firstId + "']").addClass("active");
 
 		$(".tb-content-toggle#" + contentToggleItem.id + " > .panel > .panel-collapse").removeClass("show");
 		$(".tb-content-toggle#" + contentToggleItem.id + " > .panel > .panel-collapse#" + firstId).addClass("show");
@@ -978,43 +968,5 @@ var pushmenu = (function(){
 			window.history.pushState({ path: newurl }, '', newurl);
 			selectTargetHandler(contentToggleItem, id);
 		});
-	}
-
-	function addExpandButton(codeBlock) {
-		const pre = $(codeBlock).find('pre').first();
-		const classes = $(codeBlock).attr('class').split(' ');
-
-		const expandableClass = classes.find(className => className.startsWith('expandable'));
-
-		if (expandableClass) {
-			let rows = parseInt(expandableClass.split('-')[1]);
-			let collapsedHeight = rows * 28 + 5;
-			pre.css('height', collapsedHeight + 'px');
-			$(codeBlock).find('.highlight').first().css("margin-bottom", "45px");
-
-			let button = $('<button class="expand-code-btn"><div class="collapsed"></div><p>expand</p></button>');
-
-			button.on('click', function () {
-				if (button.attr('data-expanded') === 'true') {
-					pre.css('height', collapsedHeight + 'px');
-					button.attr('data-expanded', 'false');
-					button.find('p').text('expand');
-					button.get(0).scrollIntoView({ block: "center" });
-					button.find('div').removeClass('expanded');
-					button.find('div').addClass('collapsed');
-				} else {
-					if (pre.prop('scrollHeight') > 2775) {
-						$(codeBlock).find('.rouge-gutter').css("width", "60px");
-					}
-					pre.css('height', pre.prop('scrollHeight') + 'px');
-					button.attr('data-expanded', 'true');
-					button.find('p').text('collapse');
-					button.find('div').removeClass('collapsed');
-					button.find('div').addClass('expanded');
-				}
-			});
-
-			$(codeBlock).append(button);
-		}
 	}
 })();
