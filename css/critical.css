@@ -2431,3 +2431,55 @@ hr {
 .fa-chevron-down:before {
   content: "\f078";
 }
+
+#hero #hero-content .top-retail {
+  position: absolute;
+}
+
+#hero #hero-content .top-retail img {
+  height: 340px;
+}
+
+@media screen and (min-width: 1440px) {
+  #hero #hero-content .top-retail {
+    top: 80px;
+    left: 72%;
+    right: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #hero #hero-content .top-retail {
+    top: 65px;
+    left: 69%;
+    right: unset;
+  }
+
+  #hero #hero-content .top-retail img {
+    height: 307px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #hero #hero-content .top-retail {
+    top: 17px;
+    left: 39%;
+    right: unset;
+  }
+
+  #hero #hero-content .top-retail img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #hero #hero-content .top-retail {
+    top: 76px;
+    left: 37%;
+    right: unset;
+  }
+
+  #hero #hero-content .top-retail img {
+    height: 26vh;
+  }
+}
