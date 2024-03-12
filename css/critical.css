@@ -2434,6 +2434,9 @@ hr {
 
 #hero #hero-content .top-retail {
   position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #hero #hero-content .top-retail img {
@@ -2443,16 +2446,12 @@ hr {
 @media screen and (min-width: 1440px) {
   #hero #hero-content .top-retail {
     top: 80px;
-    left: 72%;
-    right: unset;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   #hero #hero-content .top-retail {
     top: 65px;
-    left: 69%;
-    right: unset;
   }
 
   #hero #hero-content .top-retail img {
@@ -2462,9 +2461,29 @@ hr {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #hero #hero-content .top-retail {
-    top: 17px;
-    left: 39%;
-    right: unset;
+    top: 86px;
+  }
+
+  #hero #hero-content .top-retail img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #hero #hero-content .top-retail {
+    top: 80px;
+  }
+
+  #hero #hero-content .top-retail img {
+    height: 16vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+  #hero #hero-content .top-retail {
+    top: 30px;
+    justify-content: flex-end;
+    padding-right: 80px;
   }
 
   #hero #hero-content .top-retail img {
@@ -2472,14 +2491,15 @@ hr {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1280px) and (max-height: 800px) {
   #hero #hero-content .top-retail {
-    top: 76px;
-    left: 37%;
-    right: unset;
+    padding-right: 150px;
   }
+}
 
-  #hero #hero-content .top-retail img {
-    height: 26vh;
+@media screen and (min-width: 1281px) and (min-height: 801px) {
+  #hero #hero-content .top-retail {
+    padding-right: 126px;
+    top: 77px;
   }
 }
